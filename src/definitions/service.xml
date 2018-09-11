@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service.xml>
+
+	<!-- Client-Server Service-->
+	<CSServer id="realCSServer" implClass="com.ibm.btt.cs.servlet.CSServer" inactivityClientIdle="-1" inactivityClientTimeout="1800000" timeBetweenSessionCheck="20000"/>
+
+</service.xml>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction:WorkProduct xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:transaction="http://btt.cn.ibm.com/transaction" xmi:id="_AcdKwJMREeChZeskSsdmLg">
+  <service xmi:type="transaction:ServiceCategory" xmi:id="_AcdKwZMREeChZeskSsdmLg">
+    <services xmi:type="transaction:Service" xmi:id="_AcdKwpMREeChZeskSsdmLg" tag="CSServer" id="realCSServer" comment=" Client-Server Service">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_06L7EQ5-EeWHgPClW_ZwFg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_06L7Eg5-EeWHgPClW_ZwFg" name="implClass" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_06L7Ew5-EeWHgPClW_ZwFg" name="inactivityClientIdle" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_06L7FA5-EeWHgPClW_ZwFg" name="inactivityClientTimeout" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_06L7FQ5-EeWHgPClW_ZwFg" name="timeBetweenSessionCheck" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_06L7Fg5-EeWHgPClW_ZwFg" key="_06L7Eg5-EeWHgPClW_ZwFg" value="com.ibm.btt.cs.servlet.CSServer"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_06L7Fw5-EeWHgPClW_ZwFg" key="_06L7EQ5-EeWHgPClW_ZwFg" value="realCSServer"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_cTnjEA6AEeWHgPClW_ZwFg" key="_06L7FQ5-EeWHgPClW_ZwFg" value="20000"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_dx6tEA6AEeWHgPClW_ZwFg" key="_06L7FA5-EeWHgPClW_ZwFg" value="1800000"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_q2OQ4A6AEeWHgPClW_ZwFg" key="_06L7Ew5-EeWHgPClW_ZwFg" value="-1"/>
+    </services>
+  </service>
+  <globalTag xmi:type="transaction:Taggable" xmi:id="_AcdKy5MREeChZeskSsdmLg"/>
+</transaction:WorkProduct>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction:WorkProduct xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:transaction="http://btt.cn.ibm.com/transaction" xmi:id="_CDQ6cAsGEeiaqc9wyKJgrg">
+  <context xmi:type="transaction:ContextCategory" xmi:id="_CDQ6cgsGEeiaqc9wyKJgrg">
+    <contexts xmi:type="transaction:Context" xmi:id="_JbfFMAsGEeiaqc9wyKJgrg" tag="context" id="PayeeListCtx">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_JbfFMQsGEeiaqc9wyKJgrg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_JbfFMgsGEeiaqc9wyKJgrg" name="type" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_JbfFMwsGEeiaqc9wyKJgrg" name="addToDynamicKColl" type="java.lang.Boolean"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_JbfFNAsGEeiaqc9wyKJgrg" name="parent" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_JbfFNQsGEeiaqc9wyKJgrg" key="_JbfFMgsGEeiaqc9wyKJgrg" value="op"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_JbfFNgsGEeiaqc9wyKJgrg" key="_JbfFMQsGEeiaqc9wyKJgrg" value="PayeeListCtx"/>
+      <refElement xmi:type="transaction:RefKColl" xmi:id="_K_U2gAsGEeiaqc9wyKJgrg" tag="refKColl">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_K_U2gQsGEeiaqc9wyKJgrg" name="refId" required="true" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_Lio-8AsGEeiaqc9wyKJgrg" key="_K_U2gQsGEeiaqc9wyKJgrg" value="PayeeListRecord"/>
+      </refElement>
+    </contexts>
+  </context>
+  <data xmi:type="transaction:DataCategory" xmi:id="_CDQ6cwsGEeiaqc9wyKJgrg">
+    <dataElements xmi:type="transaction:KeyedCollection" xmi:id="_KRSEwAsGEeiaqc9wyKJgrg" tag="kColl" id="PayeeListRecord">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_KRSEwQsGEeiaqc9wyKJgrg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_KRSEwgsGEeiaqc9wyKJgrg" name="description" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_KRSEwwsGEeiaqc9wyKJgrg" name="direction" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_KRSExAsGEeiaqc9wyKJgrg" name="dynamic" type="java.lang.Boolean"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_KRSExQsGEeiaqc9wyKJgrg" key="_KRSEwwsGEeiaqc9wyKJgrg" value="both"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_KRSExgsGEeiaqc9wyKJgrg" key="_KRSEwQsGEeiaqc9wyKJgrg" value="PayeeListRecord"/>
+    </dataElements>
+  </data>
+  <format xmi:type="transaction:FormatCategory" xmi:id="_CDQ6dAsGEeiaqc9wyKJgrg"/>
+  <operation xmi:type="transaction:OperationCategory" xmi:id="_CDQ6dQsGEeiaqc9wyKJgrg">
+    <operations xmi:type="transaction:Operation" xmi:id="_Iue1QAsGEeiaqc9wyKJgrg" tag="operation" id="PayeeListOp">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_Iue1QQsGEeiaqc9wyKJgrg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_Iue1QgsGEeiaqc9wyKJgrg" name="context" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_Iue1QwsGEeiaqc9wyKJgrg" name="implClass" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_Iue1RAsGEeiaqc9wyKJgrg" name="xVal" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_SjdWUAsGEeiaqc9wyKJgrg" name="scope" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_SjdWUQsGEeiaqc9wyKJgrg" name="expireTime" type="java.lang.Long"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_Iue1RQsGEeiaqc9wyKJgrg" key="_Iue1QwsGEeiaqc9wyKJgrg" value="com.ibm.btt.application.op.PayeeListOp"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_Iue1RgsGEeiaqc9wyKJgrg" key="_Iue1QQsGEeiaqc9wyKJgrg" value="PayeeListOp"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_SjdWUgsGEeiaqc9wyKJgrg" key="_Iue1QgsGEeiaqc9wyKJgrg" value="PayeeListCtx"/>
+    </operations>
+  </operation>
+  <service xmi:type="transaction:ServiceCategory" xmi:id="_CDQ6dgsGEeiaqc9wyKJgrg"/>
+  <globalTag xmi:type="transaction:Taggable" xmi:id="_CDQ6dwsGEeiaqc9wyKJgrg"/>
+</transaction:WorkProduct>

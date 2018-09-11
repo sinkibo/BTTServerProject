@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<btt.xml>
+
+	<kColl id="components">
+
+		<kColl id="settings">
+			<kColl id="mappingEngines">
+				<kColl id="default"
+					description="JavaScript Batch (default)">
+					<field id="mode" value="Batch" />
+					<field id="class"
+						value="com.ibm.btt.base.mapper.engine.RhinoEngine" />
+					<!-- use for JS Batch mode only -->
+					<field id="bufferLimit" value="1024000" />
+				</kColl>
+				<kColl id="Normal"
+					description="JavaScript Normal (Rhino Engine)">
+					<field id="mode" value="Normal" />
+					<field id="class"
+						value="com.ibm.btt.base.mapper.engine.RhinoEngine" />
+				</kColl>
+				<kColl id="direct"
+					description="Direct (no expressions)">
+					<field id="mode" value="Direct" />
+					<field id="class"
+						value="com.ibm.btt.base.DataMapperExpressionConverterFormat" />
+				</kColl>
+			</kColl>
+
+			<field id="initializer"
+				value="com.ibm.btt.config.impl.GlobalSettings" />
+			<field id="modularity" value="mixed" />
+			<field id="SessionMode" value="j2ee" />
+
+			<kColl id="paths">
+				<field id="entities" value="fromJAR" />
+				<field id="operations" value="/operations/" />
+				<field id="processors" value="/processors/" />
+			</kColl>
+
+			<field id="showProgressBar" value="no"
+				description="Showing the progress bar when reading the XML files. Default value is: no" />
+			<field id="bufferSize" value="200000"
+				description="The size of the buffer used to read the XML files, unitage is K bytes" />
+			<field id="queueBufferSize" value="20"
+				description="The size of the queue buffer stores the events handled by the automation, unitage is K bytes" />
+			<kColl id="globalFunctions">
+				<field id="BTTStringFunctions"
+					value="com.ibm.btt.utils.GlobalFunctions" />
+				<field id="BTTDateFunctions"
+					value="com.ibm.btt.utils.GlobalFunctions" />
+				<field id="BTTNumberFunctions"
+					value="com.ibm.btt.utils.GlobalFunctions" />
+				<field id="BTTBigDecimalFunctions"
+					value="com.ibm.btt.utils.GlobalBigDecimalFunctions" />
+				<field id="BTTCollectionFunctions"
+					value="com.ibm.btt.utils.GlobalFunctions" />
+				<field id="BTTUtilitiesFunctions"
+					value="com.ibm.btt.utils.GlobalFunctions" />
+				<field id="ignoreException" value="false" />
+			</kColl>
+
+			<kColl id="initialization"
+				description="Startup Process Parameters, class and method to start the application. Used by the Startup class during the startup process. Enable cache for formatters and operations.">
+				<field id="enableFormatsCache" value="false" />
+				<field id="enableOperationsCache" value="false" />
+				<field id="sessionPersistence" value="false"
+					description="Set the session persistence of server" />
+				<field id="sessionAffinity" value="false" />
+				<field id="enableProcessorsCache" value="false" />
+				<field id="shareDataDescriptors" value="true" />
+			</kColl>
+
+			<kColl id="externalizerAccessors"
+				description="Collection for externalizer accessors, default configuration from BTT">
+				<field id="type"
+					value="com.ibm.btt.base.types.TypeExternalizerAccessor" />
+				<field id="data"
+					value="com.ibm.btt.base.DataExternalizerAccessor" />
+				<field id="context"
+					value="com.ibm.btt.base.ContextExternalizerAccessor" />
+				<field id="format"
+					value="com.ibm.btt.base.FormatExternalizerAccessor" />
+				<field id="service"
+					value="com.ibm.btt.base.ServiceExternalizerAccessor" />
+				<field id="operation"
+					value="com.ibm.btt.base.OperExternalizerAccessor" />
+				<field id="processor"
+					value="com.ibm.btt.automaton.ProcExternalizerAccessor" />
+				<!-- User can extend customerized externalizerAccessors class-->
+				<!--field id="ExtendProcessor" value="com.xxxbank.client.processor.ProcExternalizerAccessor"/-->
+			</kColl>
+			<field id="VariableResolver"
+				value="com.ibm.btt.services.ws.endpoint.DefaultVariableResolver" />
+			<kColl id="WebServices">
+				<kColl id="servers">
+					<!-- Configure server environment info consumed by default variable resolver -->
+					<!-- field id="xxxServer" value="http://127.0.0.1:9080" -->
+				</kColl>
+			</kColl>
+
+			<!-- This project map is only for Tooling part -->
+			<!-- id means the key,it will not allow to change,value means the project Mapped URL,the description means project name,when user change project name should update description -->
+			<kColl id="remoteProjectURL">
+				<field id="commonProject"
+					value="http://localhost:8080/CommonWebProject/"
+					description="CommonWebProject" />
+				<field id="globalProject"
+					value="http://localhost:8080/GLobalWebProject/"
+					description="GlobalProject" />
+			</kColl>
+
+			<kColl id="directPaginationType">
+				<field id="default"
+					value="com.ibm.btt.cs.ajax.DefaultPaginationOp"
+					description="Default pagination operation" />
+			</kColl>
+
+			<kColl id="indirectPaginationType">
+				<field id="default"
+					value="com.ibm.btt.cs.ajax.DefaultPaginationOp"
+					description="Default pagination operation" />
+			</kColl>
+
+			<kColl id="timeZone">
+				<field id="enableTimezone" value="true"
+					description="enableTimezone parameter is a switch to enable timezone variable." />
+				<!--If  timezone is not submitted from client and default timezone is not defined, current system timezone will be used, for example: value="0" means UTC+0-->
+				<!--field id="defaultTimeZone" value="0" 	description="defaultTimeZone parameter is default time zone number when timeZone is enabled" /-->
+			</kColl>
+
+			<!-- The field value indicates the external rule definition file for dynamic flow function -->
+			<field id="dynamicFlow" value="dynamicFlow.xml"
+				description="External rule definition file for dynamic flow function" />
+			<kColl id="License">
+				<field id="licenseServerAddress"
+					value="10.200.0.199:7498"
+					description="The address of License server" />
+				<field id="licenseFilePath"
+					value="C:\\License\\License.BTT"
+					description="The path of License file" />
+				<field id="licenseLibraryPath"
+					value="C:\\windows_intel\\ultclientjni32.dll"
+					description="The path of License library file" />
+			</kColl>
+
+		</kColl>
+
+		<kColl id="trace">
+			<!-- Trace -->
+			<!-- Trace can isolate problems and debug code -->
+			<!-- either during the application development phase or in runtime -->
+			<field id="initializer"
+				value="com.ibm.btt.base.TraceInitializer" />
+			<field id="traceTargetFactoryImplClass"
+				value="com.ibm.btt.base.BTTLogFactoryToWASImp" />
+			<field id="enableTechnicalTraces" value="true"
+				description="Adapt traces to functional developer (if false) or technical developer (if true). Defaults to true if not present." />
+			<field id="traceLevels" value="DEBUG"
+				description="Global trace level" />
+
+			<!-- Trace detail configuration items for component of package -->
+			<kColl id="requestersComponents">
+				<!-- Recommend mode: By Package -->
+				<traceRequester id="com.ibm.btt.*" trace="yes"
+					traceLevels="INFO" />
+				<traceRequester id="com.ibm.btt.base.*" trace="no"
+					traceLevels="INFO" />
+				<traceRequester id="com.ibm.btt.base.ContextFactory"
+					trace="yes" traceLevels="INFO" />
+				<!-- Compatible mode: By Component -->
+				<!-- CHA components -->
+				<traceRequester id="#CHA" trace="yes"
+					traceLevels="INFO" />
+				<!-- Core components -->
+				<traceRequester id="#CORE" trace="yes"
+					traceLevels="INFO" />
+				<!-- Client/server -->
+				<traceRequester id="#CS" trace="yes" traceLevels="INFO" />
+				<!-- Channel -->
+				<traceRequester id="#Channel" trace="yes"
+					traceLevels="INFO" />
+				<!-- Counters -->
+				<traceRequester id="#SM" trace="yes" traceLevels="INFO" />
+				<!-- Cash Drawers -->
+				<traceRequester id="#CSDW" trace="no"
+					traceLevels="INFO" />
+				<!-- Automaton -->
+				<traceRequester id="#AUTO" trace="yes"
+					traceLevels="INFO" />
+				<!-- Event Manager -->
+				<traceRequester id="#EVMG" trace="no"
+					traceLevels="INFO" />
+				<!-- LU0 service -->
+				<traceRequester id="#LU0" trace="no" traceLevels="INFO" />
+				<!-- LU62 service -->
+				<traceRequester id="#LU62" trace="no"
+					traceLevels="INFO" />
+				<traceRequester id="#FUNC" trace="yes" functional="true"
+					traceLevels="INFO" />
+				<!-- Functional data traces -->
+				<traceRequester id="#FUNCDATA" trace="yes"
+					functional="true" traceLevels="INFO" />
+			</kColl>
+		</kColl>
+
+		<kColl id="type">
+			<!-- Type -->
+			<!-- Typed data elements represent business objects: Date/ProductNumber/Money/... -->
+			<field id="initializer"
+				value="com.ibm.btt.base.types.TypeInitializer" />
+			<field id="extFile" value="type.xml"
+				description="The recommended location is under same folder of btt.xml" />
+			<kColl id="classTable">
+				<field id="type" value="com.ibm.btt.base.types.DSEType"
+					description="compound" />
+
+				<field id="dateConverter" />
+				<field id="dateValidator" />
+				<field id="stringConverter"></field>
+			</kColl>
+		</kColl>
+
+		<kColl id="data">
+			<!-- Data -->
+			<!-- Data elements are what the toolkit uses to hold data in a structure -->
+			<!-- that enables toolkit entities, processes, and services to add, -->
+			<!-- update, and delete the data during runtime. -->
+			<field id="extFile" value="data.xml"
+				description="The recommended location is under same folder of btt.xml" />
+			<field id="initializer"
+				value="com.ibm.btt.base.DataInitializer" />
+			<kColl id="classTable">
+				<!-- Provided by BTT -->
+				<field id="field" value="com.ibm.btt.base.DataField"
+					description="A data field represents a single data item and is the only data element provided by the toolkit that has a value. " />
+				<field id="iColl"
+					value="com.ibm.btt.base.IndexedCollection"
+					description="An indexed collection contains an ordered collection (that is, an array-type collection) of instances identified by their position in the collection. All of the data elements in the indexed collection must be the same type." />
+				<field id="kColl"
+					value="com.ibm.btt.base.KeyedCollection"
+					description="A keyed collection contains an ordered collection of data elements identified by name. Because it holds key-value pairs, a keyed collection is similar to a dictionary." />
+				<field id="bColl"
+					value="com.ibm.btt.bean.BeanCollection"
+					description="A bean collection contains an ordered collection of data elements. A BeanCollection corresponds to a POJO , and the data elements in this BeanCollection correspond to the attributes of the POJO." />
+				<field id="treeModel"
+					value="com.ibm.btt.dojo.model.TreeModel"
+					description="A treeModel is used and only used to present tree item including label, value, etc, should not be used as generic collection." />
+				<field id="htmlIColl"
+					value="com.ibm.btt.automaton.html.HtmlIndexedCollection"
+					description="compound" />
+				<!-- Customer self-defined -->
+				<!--field id="sessionEntry" value="com.ibm.btt.base.SessionEntry"/-->
+				<!--field id="sessionTable" value="com.ibm.btt.base.SessionTable"/-->
+			</kColl>
+		</kColl>
+		<!-- ======================================== -->
+		<!-- 	              Service   	          -->
+		<!-- ======================================== -->
+		<!-- BTT provides service objects that enable application to complete an operation. -->
+		<kColl id="service">
+			<field id="extFile" value="service.xml" />
+			<field id="initializer"
+				value="com.ibm.btt.base.ServiceInitializer" />
+			<kColl id="classTable">
+				<field id="CSServer"
+					value="com.ibm.btt.cs.servlet.CSServer" />
+				<!-- Jax-WS Connector to invoke Web services -->
+				<field id="JaxWsConnector"
+					value="com.ibm.btt.services.ws.jaxws.BTTJaxWsConnector" />
+				<!-- Web Message Service for Websphere -->
+				<!-- require bttwebmsg.jar of BTT and the webmsg_applib.jar from websphere feature pack  -->
+				<!-- 
+					<field id="WebMessage"
+					value="com.ibm.btt.services.webmsg.WebMsgServiceWASImpl" />
+				-->
+				<!-- Web Message Service for Weblogic -->
+				<!-- require bttwebmsg.jar of BTT and the com.bea.core.http.pubsub_2.0.0.0.jar from weblogic pubsub server  -->
+				<!-- 
+					<field id="WebMessage"
+					value="com.ibm.btt.services.webmsg.WebMsgServiceWeblogicImpl" />
+				-->
+			</kColl>
+		</kColl>
+
+		<kColl id="context">
+			<!-- Context -->
+			<!-- Context is object defines and encapsulates a set of resources -->
+			<!-- (data and services) for functional or business organization entity. -->
+			<field id="extFile" value="context.xml"
+				description="The recommended location is under same folder of btt.xml" />
+			<field id="initializer"
+				value="com.ibm.btt.base.ContextInitializer" />
+			<kColl id="classTable">
+				<field id="context"
+					value="com.ibm.btt.base.LocalContextImpl" />
+			</kColl>
+
+		</kColl>
+
+
+		<kColl id="formatter">
+			<!-- Formatter -->
+			<!-- Formatters are what btt uses to exchange data format -->
+			<!-- between btt entities such as operations/contexts/services. -->
+			<field id="extFile" value="format.xml"
+				description="The recommended location is under same folder of btt.xml" />
+			<field id="initializer"
+				value="com.ibm.btt.base.FormatInitializer" />
+			<field id="ignoreException" value="true" description=""></field>
+			<kColl id="classTable">
+				<field id="refFmt" />
+				<!-- Constant formatter -->
+				<field id="constant"
+					value="com.ibm.btt.base.ConstantFormat" />
+				<!-- Concrete field formatter -->
+				<field id="fDate" value="com.ibm.btt.base.DateFormat" />
+				<field id="fFloat" value="com.ibm.btt.base.FloatFormat" />
+				<field id="fInteger"
+					value="com.ibm.btt.base.IntegerFormat" />
+				<field id="fBinIntString"
+					value="com.ibm.btt.base.BinaryIntegerStringFormat" />
+				<field id="fNumString"
+					value="com.ibm.btt.base.NumericStringFormat" />
+				<field id="fPacked"
+					value="com.ibm.btt.base.PackedFormat" />
+				<field id="fPackedDate"
+					value="com.ibm.btt.base.PackedDateFormat" />
+				<field id="fString"
+					value="com.ibm.btt.base.StringFormat" />
+				<field id="fTime" value="com.ibm.btt.base.TimeFormat" />
+				<!-- Indexed collection formatter -->
+				<field id="iCollF"
+					value="com.ibm.btt.base.IndexedCollectionFormat"
+					description="compound" />
+				<!-- Concrete keyed collection formatter -->
+				<field id="kCollF"
+					value="com.ibm.btt.base.KeyedCollectionFormat" />
+				<field id="record" value="com.ibm.btt.base.RecordFormat"
+					description="compound" />
+				<field id="drecord"
+					value="com.ibm.btt.base.DynamicRecordFormat" />
+				<field id="fXML" value="com.ibm.btt.base.XMLFormat"
+					description="compound" />
+				<field id="fdXML"
+					value="com.ibm.btt.base.DynamicXMLFormat" description="compound" />
+				<field id="mapperConverter"
+					value="com.ibm.btt.base.DataMapperConverterFormat" />
+				<field id="fTypedData"
+					value="com.ibm.btt.base.TypedDataElementFormat" />
+				<field id="mapper"
+					value="com.ibm.btt.base.DataMapperFormat" description="compound" />
+				<field id="fBigDecimal"
+					value="com.ibm.btt.base.BigDecimalFormat" />
+				<field id="fObject"
+					value="com.ibm.btt.base.ObjectFormat" />
+				<field id="pointer" value="com.ibm.btt.base.DataPointer"
+					description="compound" />
+				<field id="hashtable"
+					value="com.ibm.btt.base.HashtableFormat" />
+				<!-- Concrete decorator  -->
+				<field id="nullCheck"
+					value="com.ibm.btt.base.NullCheckDecorator" />
+				<field id="compress"
+					value="com.ibm.btt.base.Compressor" />
+				<field id="codeSetTrans"
+					value="com.ibm.btt.base.CodeSetTranslator" />
+				<field id="delim" value="com.ibm.btt.base.Delimiter" />
+				<field id="fixedLength"
+					value="com.ibm.btt.base.FixedLength" />
+				<field id="id" value="com.ibm.btt.base.Identifier" />
+				<field id="maxLength"
+					value="com.ibm.btt.base.MaximumLength" />
+				<field id="selfLength"
+					value="com.ibm.btt.base.SelfLength" />
+				<field id="wsMapperConverter"
+					value="com.ibm.btt.base.ws.WSMapperConverter" />
+				<field id="mapperConverterExpression"
+					value="com.ibm.btt.base.ConditionalDataMapperFormat" />
+				<field id="fJSON" value="com.ibm.btt.base.JSONFormat"
+					description="compound" />
+				<field id="condition"
+					value="com.ibm.btt.form.xval.FormXValidation" />
+				<field id="xValConditions"
+					value="com.ibm.btt.form.xval.FormXValidations" />
+				<field id="mandatories"
+					value="com.ibm.btt.form.xval.Mandatories" />
+
+			</kColl>
+		</kColl>
+
+		<kColl id="operation">
+			<!-- Operation -->
+			<!-- Operation is the entity responsible for performing-->
+			<!-- the set of tasks needed to complete a basic financial operation. -->
+			<field id="extFile" value="operation.xml"
+				description="The recommended location is under same folder of btt.xml" />
+			<field id="initializer"
+				value="com.ibm.btt.base.OperationInitializer" />
+			<kColl id="classTable">
+				<field id="compare"
+					value="com.ibm.btt.base.CompareAssertion" />
+				<field id="elements"
+					value="com.ibm.btt.base.NumOfElementsAssertion" />
+				<field id="exists"
+					value="com.ibm.btt.base.ExistsAssertion" />
+			</kColl>
+			<kColl id="files"
+				description="Self-defined operation file path">
+				<!--  operDef id="anSelfOperation"
+					value="anSelfOperation.xml" path="http://localhost:9080/UrlEarWeb/bttCfgTestFiles/ops/" /-->
+
+			</kColl>
+			<kColl id="packages"
+				description="sub-folder for operation">
+				<!--  field id="subFolderName" value="subFolderPath" /-->
+			</kColl>
+		</kColl>
+
+		<kColl id="processor">
+			<!-- Processor -->
+			<!-- A processor is a representation of -->
+			<!-- a particular route through a business process or business operation. -->
+			<field id="extFile" value="processor.xml"
+				description="The recommended location is under same folder of btt.xml" />
+			<field id="initializer"
+				value="com.ibm.btt.automaton.ProcessorInitializer" />
+			<kColl id="classTable">
+				<field id="remoteFlowState"
+					value="com.ibm.btt.cs.html.remote.RemoteFlowState" />
+				<field id="processor"
+					value="com.ibm.btt.automaton.DSEProcessor" />
+				<field id="opProcessor"
+					value="com.ibm.btt.automaton.ext.DSEOperationProcessor" />
+				<field id="state"
+					value="com.ibm.btt.automaton.DSEState" />
+				<field id="transition"
+					value="com.ibm.btt.automaton.TransitionDescriptor" />
+				<field id="htmlProcessor"
+					value="com.ibm.btt.automaton.html.DSEHtmlProcessor" />
+				<field id="htmlState"
+					value="com.ibm.btt.automaton.html.DSEHtmlState" />
+				<field id="openAPIState"
+					value="unicomsi.btt.openapi.OpenAPIState" />
+				<field id="htmlTransition"
+					value="com.ibm.btt.automaton.html.HtmlTransitionDescriptor" />
+				<field id="operationState"
+					value="com.ibm.btt.automaton.ext.DSEOperationState" />
+				<field id="conditionState"
+					value="com.ibm.btt.automaton.ext.DSEConditionState" />
+				<field id="syncProcState"
+					value="com.ibm.btt.automaton.ext.DSESyncProcState" />
+				<field id="popupPageState"
+					value="com.ibm.btt.automaton.ext.PopupPageClientState" />
+				<field id="popupSubFlowState"
+					value="com.ibm.btt.automaton.ext.PopupSubflowClientState" />
+				<field id="printState"
+					value="com.ibm.btt.automaton.ext.PrintClientState" />
+				<field id="subPageState"
+					value="com.ibm.btt.automaton.ext.SubPageState" />
+
+				<!-- Action -->
+				<field id="check"
+					value="com.ibm.btt.automaton.ext.CheckAction" />
+				<field id="start"
+					value="com.ibm.btt.automaton.ext.StartAction" />
+				<field id="executeSubflowAct"
+					value="com.ibm.btt.automaton.ext.ExecuteSubflowAct" />
+				<field id="executeOperationAct"
+					value="com.ibm.btt.automaton.ext.ExecuteOperationAct" />
+
+				<field id="cond1"
+					value="com.ibm.btt.automaton.DSEGuardCondition" />
+			</kColl>
+			<kColl id="files"
+				description="Self-defined processor file path">
+				<!--  procDef id="selfOpProc"
+					value="selfOpProc.xml" path="procs/spec/" /-->
+
+			</kColl>
+			<kColl id="packages"
+				description="sub-folder for processor">
+				<!--  field id="subFolderName" value="subFolderPath" /-->
+			</kColl>
+		</kColl>
+
+		<kColl id="invoker">
+			<!-- Invoker -->
+			<!-- BTT Invoker is a Method-Level-based invocation service -->
+			<!-- which supports POJO, EJB, Web Service, JMS and asynchronized invocation. -->
+			<field id="initializer"
+				value="com.ibm.btt.invoker.InvokerInitializer" />
+			<field id="extFile" value="invoker.xml"
+				description="The recommended location is under same folder of btt.xml" />
+			<kColl id="classTable">
+				<field id="POJO"
+					value="com.ibm.btt.invoker.pojo.POJOInvoker"
+					description="POJO invoker is designated to invoke the method of Plain Old Java Object." />
+				<field id="EJB"
+					value="com.ibm.btt.invoker.ejb.EJBInvoker"
+					description="EJB invoker is designated to invoke the method of Enterprise Java Bean." />
+				<field id="WSProxy"
+					value="com.ibm.btt.invoker.ws.WSProxyInvoker"
+					description="BTT invoker calls the proxy generated by WAS or RAD or WID. Through the proxy mode, BTT invoker WSProxy supports JAX-RPC, JSR109, AXIS and JAX-WS." />
+				<field id="WSDII"
+					value="com.ibm.btt.invoker.ws.dynamic.WSDynamicInvoker"
+					description="Web service Invoker Interface (DII) invoker aims to provide a simple and generic way for BTT to invoke different external Web services." />
+				<field id="JMS"
+					value="com.ibm.btt.invoker.jms.JMSInvoker"
+					description="JMS invoker is used to send and receive JMS message." />
+			</kColl>
+		</kColl>
+
+		<kColl id="channelHandlers">
+			<!-- ChannelHandler -->
+			<!-- Multichannel accepts input from and dispatch output to devices of various types, -->
+			<!-- reusing the same implementations of business functions, -->
+			<!-- regardless of the communication protocols involved.  -->
+			<field id="initializer"
+				value="com.ibm.btt.channel.ChannelInitializer" />
+			<kColl id="devices">
+				<!-- Value should be every defined channel name, description can only be "contains" -->
+				<field id="Opera" value="html" description="contains" />
+			</kColl>
+			<kColl id="html">
+				<field id="encoding" value="UTF-8" />
+				<field id="cookies" value="true" />
+				<!-- Indicates the mechanism to navigate to next state, candidate values are "html" and "ajax" -->
+				<field id="navigationMode" value="ajax" />
+				<field id="runInSession" value="true" />
+				<!-- This is the newly added field, and its default value is false, so that the state is driven by server side. -->
+				<field id="trustClientState" value="false" />
+				<field id="serverXValidation" value="true" />
+				<field id="xValidationErrorHandler"
+					value="com.ibm.btt.cs.html.xValidationDefaultErrorHandler" />
+				<field id="requestHandler"
+					value="com.ibm.btt.cs.html.HtmlRequestHandler" />
+				<field id="presentationHandler"
+					value="com.ibm.btt.cs.html.ExtendHtmlPresentationHandler" />
+				<!-- The exceptionHandler is for handle server side exception, user can extend the java file with its own logic -->
+				<!-- field id="exceptionHandler"
+					value="com.ibm.btt.cs.html.HtmlExceptionHandler">
+					</field -->
+				<!--  The channelPolicyHandler field is the customer’s implementation of the abstract channel policy handler.-->
+				<!-- The ruleService value is the id of rule service. -->
+				<!-- If you configure the channel policy handler in Html and Java Channel, it works for all requests; but for XML channel, you need to create session in a servlet (For example, the com.ibm.btt.xml.servlet. -->
+				<!-- CreateSession servlet in BTTMultiChannelSample), and channel policy handler does not work on the servlet. -->
+				<!-- field id="channelPolicyHandler" value="com.ibm.btt.sample.rule.MyChannelPolicyHandler"/-->
+				<!-- field id="ruleService" value="channelRuleService" /-->
+
+				<!-- The smartCollectorHandler field is the customer’s implementation of the abstractSmartCollector. -->
+				<!-- The smartCollectorConfigFile field is the file path of the smart collector config. -->
+				<!-- the smartCollectorHandler is used  for collector customer behavior data in server side,it supply two default collector implementation(JPA,JMS).and it base on channel policy ,support customer  -->
+				<!-- sampling transaction data by operationId or processorId. and it have good expansibility,support collector extend behavior data which the default smart behavior data not included.-->
+				<!-- field id="smartCollectorHandler" value="com.ibm.btt.processor.util.smartChannelDataCollector"/-->
+				<!-- field id="smartCollectorConfigFile" value="jar:///bcConfig/SmartChannelDataCollect.xml"/-->
+			</kColl>
+			<kColl id="remoteBTTApp"
+				description="Channel Handler for remote BTT operation/flow calling">
+				<field id="encoding" value="UTF-8" />
+				<field id="cookies" value="true" />
+				<field id="runInSession" value="true" />
+				<field id="requestHandler"
+					value="com.ibm.btt.cs.html.remote.RemoteRequestHandler" />
+				<field id="presentationHandler"
+					value="com.ibm.btt.cs.html.ExtendHtmlPresentationHandler" />
+			</kColl>
+			<kColl id="ajax">
+				<field id="encoding" value="UTF-8" />
+				<field id="cookies" value="true" />
+				<field id="runInSession" value="true" />
+				<field id="requestHandler"
+					value="com.ibm.btt.cs.ajax.AjaxHtmlRequestHandler" />
+				<field id="presentationHandler"
+					value="com.ibm.btt.cs.ajax.AjaxHtmlPresentationHandler" />
+
+				<kColl id="fileHandlers">
+					<kColl id="sampleFileHandler">
+						<field id="implClass"
+							value="com.ibm.btt.sample.SampleFileHandler" />
+						<field id="timeout" value="20000" />
+						<field id="maxSize" value="62914560" />
+						<field id="cachePath"
+							value="c:\temp\fileupload\cache" />
+						<field id="filepath"
+							value="c:\temp\fileupload\upload" />
+						<field id="memCacheSize" value="4096" />
+					</kColl>
+				</kColl>
+			</kColl>
+
+			<kColl id="HTMLClient" description="html client settings">
+				<field id="filePath" value="/jsp/" />
+				<field id="errorPage" value="errorpage.jsp" />
+				<field id="homePage" value="index.jsp" />
+				<field id="startUpOp" value="startUpHtmlSessionOp"
+					description="The startup operation to create session context, provided by user" />
+				<field id="minRequestResubmitTime" value="0"
+					description="Used to suppress duplicate requests from the client browser." />
+				<field id="monitorState" value="close"
+					description="To enable the web monitor function, need to set the value to open for the field monitorState. " />
+				<field id="monitorPath" value="RuntimeMonitor/"
+					description="Used to configure the path of library resources of the web monitor. " />
+				<field id="actionUrl" value="Request" />
+				<field id="nlsFromServer" value="true" />
+				<kColl id="listCacheService">
+					<field id="jsonFromServer" value="false" />
+					<field id="implClass"
+						value="com.ibm.btt.dojo.tag.DefaultListCacheService" />
+				</kColl>
+			</kColl>
+
+			<kColl id="java" description="java channel settings">
+				<field id="encoding" value="UTF-8" />
+				<field id="runInSession" value="true" />
+				<field id="cookies" value="true" />
+				<field id="requestHandler"
+					value="com.ibm.btt.cs.java.JavaRequestHandler"
+					description="The requestHandler is an extension of the standard requestHandler to be used with the sample application only" />
+				<field id="presentationHandler"
+					value="com.ibm.btt.cs.java.JavaPresentationHandler"
+					description="The requestHandler is the standard in the toolkit" />
+			</kColl>
+
+			<kColl id="mobile" description="mobile channel settings">
+				<field id="encoding" value="UTF-8" />
+				<field id="requestHandler"
+					value="com.ibm.btt.mobile.MobileRequestHandler"
+					description="BTT mobile request handler" />
+				<field id="presentationHandler"
+					value="com.ibm.btt.mobile.MobilePresentationHandler"
+					description="BTT mobile presentation handler" />
+				<field id="actionUrl" value="Request" />
+				<field id="startUpOp" value="startUpMobileSessionOp"
+					description="The startup operation to create session context, provided by user" />
+			</kColl>
+
+			<kColl id="openapi"
+				description="open API channel settings">
+				<field id="encoding" value="UTF-8" />
+				<field id="cookies" value="true" />
+				<field id="runInSession" value="true" />
+				<field id="requestHandler"
+					value="unicomsi.btt.openapi.OpenAPIRequestHandler"
+					description="BTT open API request handler" />
+				<field id="presentationHandler"
+					value="unicomsi.btt.openapi.OpenAPIPresentationHandler"
+					description="BTT open API presentation handler" />
+			</kColl>
+
+			<kColl id="openapi-op_flow">
+				<field id="encoding" value="UTF-8" />
+				<field id="cookies" value="true" />
+				<field id="runInSession" value="true" />
+				<field id="requestHandler"
+					value="com.ibm.btt.cs.ajax.AjaxHtmlRequestHandler" />
+				<field id="presentationHandler"
+					value="unicomsi.btt.openapi.OpenAPIPresentationHandler"
+					description="BTT open API presentation handler" />
+			</kColl>
+
+			<!-- kColl id="rest">
+				<field id="encoding" value="UTF-8" />
+				<field id="cookies" value="true" />
+				<field id="createSession" value="false" />
+				<field id="autoCreateSession" value="false" />
+				<field id="runInSession" value="true" />
+				<field id="requestHandler"
+				value="com.ibm.btt.cs.rest.RestRequestHandler" />
+				<field id="presentationHandler"
+				value="com.ibm.btt.cs.rest.RestPresentationHandler" />
+				<field id="securityAdvice"
+				value="com.ibm.btt.cs.rest.BTTSecurityAdvice" />
+				<field id="clientSettings" value="RestClient" />
+				</kColl>
+				<kColl id="RestClient"
+				description="Rest client default settings">
+				<field id="filePath" value="/views/" />
+				<field id="errorPage" value="error.jsp" />
+				<field id="homePage" value="index.jsp" />
+				<field id="startUpOp" value="startUpHtmlSessionOp"
+				description="The startup operation to create session context, provided by user" />
+				<field id="minRequestResubmitTime" value="0"
+				description="Used to suppress duplicate requests from the client browser." />
+				<field id="monitorState" value="close"
+				description="To enable the web monitor function, need to set the value to open for the field monitorState. " />
+				<field id="monitorPath" value="RuntimeMonitor/"
+				description="Used to configure the path of library resources of the web monitor. " />
+				<field id="loginOp" value="restLoginOp"
+				description="Execute this operation when user login" />
+				<field id="logoutOp" value="restLogoutOp"
+				description="Execute this operation when user logout" />
+				</kColl -->
+		</kColl>
+		<kColl id="condition">
+			<field id="extFile" value="condition.xml"
+				description="The recommended location is under same folder of btt.xml" />
+			<field id="initializer"
+				value="com.ibm.btt.cond.ConditionInitializer" />
+			<kColl id="classTable">
+				<field id="cond" value="com.ibm.btt.cond.Condition" />
+			</kColl>
+		</kColl>
+	</kColl>
+</btt.xml>

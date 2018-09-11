@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data.xml>
+
+	<!--Data collection for the branch context-->
+	<kColl id="branchData" dynamic="true">
+		<field id="BranchId"/>
+		<field id="MockDataHash"/>
+	</kColl>
+
+	<kColl id="sessionData" dynamic="true">
+		<refData refId="MockData" lazy="false"/>
+	</kColl>
+
+	<kColl id="payeeForm">
+		<data id="command" refType="String"/>
+		<refData refId="payee" lazy="false"/>
+	</kColl>
+
+	<kColl id="transferForm">
+		<data id="fromCardId" value="" refType="String"/>
+		<data id="toCardId" value="" refType="String"/>
+		<data id="amount" refType="Currency">
+			<param value="USD" id="currency"/>
+		</data>
+	</kColl>
+
+	<iColl id="cardList">
+		<refData refId="card" lazy="false"/>
+	</iColl>
+
+	<kColl id="card">
+		<data id="card_id" refType="String"/>
+		<data id="card_type" refType="String"/>
+		<data id="balance" refType="Currency">
+			<param value="USD" id="currency"/>
+		</data>
+		<refData refId="historyList"/>
+	</kColl>
+
+	<iColl id="historyList">
+		<refData refId="history" lazy="false"/>
+	</iColl>
+
+	<kColl id="history">
+		<data id="date" refType="Date"/>
+		<data id="name" refType="String"/>
+		<data id="amount" refType="Currency"/>
+	</kColl>
+
+	<iColl id="payeeList">
+		<refData refId="payee" lazy="false"/>
+	</iColl>
+
+	<kColl id="payee">
+		<data id="name" refType="String"/>
+		<data id="phone" refType="String"/>
+		<data id="card_id" refType="String"/>
+		<data id="bank" refType="String"/>
+	</kColl>
+
+	<kColl id="MockData">
+		<data id="account_id" refType="String"/>
+		<data id="card_amount" refType="Integer"/>
+		<data id="total_balance" refType="Currency"/>
+		<data id="selectCardId" refType="String"/>
+		<refData refId="payeeList"/>
+		<refData refId="cardList"/>
+		<refData refId="payeeForm" lazy="false"/>
+		<refData refId="transferForm" lazy="false"/>
+		<data id="name" refType="String"/>
+		<data id="gender" refType="String"/>
+	</kColl>
+
+</data.xml>

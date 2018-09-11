@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction:WorkProduct xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:transaction="http://btt.cn.ibm.com/transaction" xmi:id="_0F1W4JMREeChZeskSsdmLg">
+  <type xmi:type="transaction:TypeCategory" xmi:id="_0F1W4ZMREeChZeskSsdmLg">
+    <types xmi:type="transaction:Type" xmi:id="_0F1W4pMREeChZeskSsdmLg" tag="type" id="String">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W45MREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W5JMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W5ZMREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1W5pMREeChZeskSsdmLg" key="_0F1W5JMREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1W55MREeChZeskSsdmLg" key="_0F1W45MREeChZeskSsdmLg" value="String"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1W6JMREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W6ZMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W6pMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W65MREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W7JMREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W7ZMREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W7pMREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W75MREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W8JMREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W8ZMREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W8pMREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1W85MREeChZeskSsdmLg" key="_0F1W6pMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1W9JMREeChZeskSsdmLg" key="_0F1W6ZMREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1W9ZMREeChZeskSsdmLg" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W9pMREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W95MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1W-JMREeChZeskSsdmLg" key="_0F1W95MREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.StringConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1W-ZMREeChZeskSsdmLg" key="_0F1W9pMREeChZeskSsdmLg" value="default"/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1W-pMREeChZeskSsdmLg" tag="Validator">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W-5MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1W_JMREeChZeskSsdmLg" key="_0F1W-5MREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.StringValidator"/>
+        </validator>
+      </descriptors>
+    </types>
+    <types xmi:type="transaction:Type" xmi:id="_0F1W_ZMREeChZeskSsdmLg" tag="type" id="Date">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W_pMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1W_5MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XAJMREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XAZMREeChZeskSsdmLg" key="_0F1W_5MREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XApMREeChZeskSsdmLg" key="_0F1W_pMREeChZeskSsdmLg" value="Date"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1XA5MREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XBJMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XBZMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XBpMREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XB5MREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XCJMREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XCZMREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XCpMREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XC5MREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XDJMREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XDZMREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XDpMREeChZeskSsdmLg" key="_0F1XBZMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XD5MREeChZeskSsdmLg" key="_0F1XBJMREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1XEJMREeChZeskSsdmLg" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XEZMREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XEpMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XE5MREeChZeskSsdmLg" key="_0F1XEpMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.DateConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XFJMREeChZeskSsdmLg" key="_0F1XEZMREeChZeskSsdmLg" value="default"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_lxLF4KicEeG2qvY29IUI0w" key="pattern" value="yyyy-MM-dd" comment=""/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1XFZMREeChZeskSsdmLg" tag="Validator">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XFpMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XF5MREeChZeskSsdmLg" key="_0F1XFpMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.DateValidator"/>
+        </validator>
+      </descriptors>
+    </types>
+    <types xmi:type="transaction:Type" xmi:id="_0F1XGJMREeChZeskSsdmLg" tag="type" id="Currency">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XGZMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XGpMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XG5MREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XHJMREeChZeskSsdmLg" key="_0F1XGpMREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XHZMREeChZeskSsdmLg" key="_0F1XGZMREeChZeskSsdmLg" value="Currency"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1XHpMREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XH5MREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XIJMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XIZMREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XIpMREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XI5MREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XJJMREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XJZMREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XJpMREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XJ5MREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XKJMREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XKZMREeChZeskSsdmLg" key="_0F1XIJMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XKpMREeChZeskSsdmLg" key="_0F1XH5MREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1XK5MREeChZeskSsdmLg" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XLJMREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XLZMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XLpMREeChZeskSsdmLg" key="_0F1XLZMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.CurrencyConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XL5MREeChZeskSsdmLg" key="_0F1XLJMREeChZeskSsdmLg" value="default"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1XMJMREeChZeskSsdmLg" key="currency" value="EUR"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1XMZMREeChZeskSsdmLg" key="numberType" value="bigDecimal"/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1XMpMREeChZeskSsdmLg" tag="Validator">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XM5MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XNJMREeChZeskSsdmLg" key="_0F1XM5MREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.CurrencyValidator"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1XNZMREeChZeskSsdmLg" key="numberType" value="bigDecimal"/>
+        </validator>
+      </descriptors>
+    </types>
+    <types xmi:type="transaction:Type" xmi:id="_0F1XNpMREeChZeskSsdmLg" tag="type" id="Number">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XN5MREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XOJMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XOZMREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XOpMREeChZeskSsdmLg" key="_0F1XOJMREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XO5MREeChZeskSsdmLg" key="_0F1XN5MREeChZeskSsdmLg" value="Number"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1XPJMREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XPZMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XPpMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XP5MREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XQJMREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XQZMREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XQpMREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XQ5MREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XRJMREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XRZMREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XRpMREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XR5MREeChZeskSsdmLg" key="_0F1XPpMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XSJMREeChZeskSsdmLg" key="_0F1XPZMREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1XSZMREeChZeskSsdmLg" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XSpMREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XS5MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XTJMREeChZeskSsdmLg" key="_0F1XS5MREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XTZMREeChZeskSsdmLg" key="_0F1XSpMREeChZeskSsdmLg" value="default"/>
+        </converters>
+        <converters xmi:type="transaction:Converter" xmi:id="_Bh3CsEyUEeG3WJwqkhtLUw" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_Bh3pwEyUEeG3WJwqkhtLUw" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_Bh3pwUyUEeG3WJwqkhtLUw" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_Bh3pwkyUEeG3WJwqkhtLUw" key="_Bh3pwUyUEeG3WJwqkhtLUw" value="com.ibm.btt.base.types.impl.NumberFormatConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_Bh3pw0yUEeG3WJwqkhtLUw" key="_Bh3pwEyUEeG3WJwqkhtLUw" value="html"/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1XTpMREeChZeskSsdmLg" tag="Validator">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XT5MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XUJMREeChZeskSsdmLg" key="_0F1XT5MREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberValidator"/>
+        </validator>
+      </descriptors>
+    </types>
+    <types xmi:type="transaction:Type" xmi:id="_0F1XUZMREeChZeskSsdmLg" tag="type" id="Boolean">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XUpMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XU5MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XVJMREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XVZMREeChZeskSsdmLg" key="_0F1XU5MREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XVpMREeChZeskSsdmLg" key="_0F1XUpMREeChZeskSsdmLg" value="Boolean"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1XV5MREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XWJMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XWZMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XWpMREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XW5MREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XXJMREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XXZMREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XXpMREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XX5MREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XYJMREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XYZMREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XYpMREeChZeskSsdmLg" key="_0F1XWZMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XY5MREeChZeskSsdmLg" key="_0F1XWJMREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1XZJMREeChZeskSsdmLg" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XZZMREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XZpMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XZ5MREeChZeskSsdmLg" key="_0F1XZpMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.BooleanConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XaJMREeChZeskSsdmLg" key="_0F1XZZMREeChZeskSsdmLg" value="default"/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1XaZMREeChZeskSsdmLg" tag="Validator">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XapMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1Xa5MREeChZeskSsdmLg" key="_0F1XapMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.BooleanValidator"/>
+        </validator>
+      </descriptors>
+    </types>
+    <types xmi:type="transaction:Type" xmi:id="_0F1XbJMREeChZeskSsdmLg" tag="type" id="ByteArray">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XbZMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XbpMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Xb5MREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XcJMREeChZeskSsdmLg" key="_0F1XbpMREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XcZMREeChZeskSsdmLg" key="_0F1XbZMREeChZeskSsdmLg" value="ByteArray"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1XcpMREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Xc5MREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XdJMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XdZMREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XdpMREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Xd5MREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XeJMREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XeZMREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XepMREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Xe5MREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XfJMREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XfZMREeChZeskSsdmLg" key="_0F1XdJMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XfpMREeChZeskSsdmLg" key="_0F1Xc5MREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1Xf5MREeChZeskSsdmLg" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XgJMREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XgZMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XgpMREeChZeskSsdmLg" key="_0F1XgZMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.ByteArrayConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1Xg5MREeChZeskSsdmLg" key="_0F1XgJMREeChZeskSsdmLg" value="default"/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1XhJMREeChZeskSsdmLg" tag="Validator">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XhZMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XhpMREeChZeskSsdmLg" key="_0F1XhZMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.ByteArrayValidator"/>
+        </validator>
+      </descriptors>
+    </types>
+    <types xmi:type="transaction:Type" xmi:id="_0F1Xh5MREeChZeskSsdmLg" tag="type" id="Duration">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XiJMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XiZMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XipMREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1Xi5MREeChZeskSsdmLg" key="_0F1XiZMREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XjJMREeChZeskSsdmLg" key="_0F1XiJMREeChZeskSsdmLg" value="Duration"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1XjZMREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XjpMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Xj5MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XkJMREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XkZMREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XkpMREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Xk5MREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XlJMREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XlZMREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XlpMREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Xl5MREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XmJMREeChZeskSsdmLg" key="_0F1Xj5MREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XmZMREeChZeskSsdmLg" key="_0F1XjpMREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1XmpMREeChZeskSsdmLg" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Xm5MREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XnJMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XnZMREeChZeskSsdmLg" key="_0F1XnJMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.DurationConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XnpMREeChZeskSsdmLg" key="_0F1Xm5MREeChZeskSsdmLg" value="default"/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1Xn5MREeChZeskSsdmLg" tag="Validator">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XoJMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XoZMREeChZeskSsdmLg" key="_0F1XoJMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.DurationValidator"/>
+        </validator>
+      </descriptors>
+    </types>
+    <types xmi:type="transaction:Type" xmi:id="_0F1XopMREeChZeskSsdmLg" tag="type" id="XMLGregorianCalendar">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Xo5MREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XpJMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XpZMREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XppMREeChZeskSsdmLg" key="_0F1XpJMREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1Xp5MREeChZeskSsdmLg" key="_0F1Xo5MREeChZeskSsdmLg" value="XMLGregorianCalendar"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1XqJMREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XqZMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XqpMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Xq5MREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XrJMREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XrZMREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XrpMREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Xr5MREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XsJMREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XsZMREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XspMREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1Xs5MREeChZeskSsdmLg" key="_0F1XqpMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XtJMREeChZeskSsdmLg" key="_0F1XqZMREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1XtZMREeChZeskSsdmLg" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XtpMREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Xt5MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XuJMREeChZeskSsdmLg" key="_0F1Xt5MREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.XMLGregorianCalendarConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XuZMREeChZeskSsdmLg" key="_0F1XtpMREeChZeskSsdmLg" value="default"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1XupMREeChZeskSsdmLg" key="pattern" value="yyyy-MM-dd"/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1Xu5MREeChZeskSsdmLg" tag="Validator">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XvJMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XvZMREeChZeskSsdmLg" key="_0F1XvJMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.XMLGregorianCalendarValidator"/>
+        </validator>
+      </descriptors>
+    </types>
+    <types xmi:type="transaction:Type" xmi:id="_0F1XvpMREeChZeskSsdmLg" tag="type" id="Byte">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Xv5MREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XwJMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XwZMREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1XwpMREeChZeskSsdmLg" key="_0F1XwJMREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1Xw5MREeChZeskSsdmLg" key="_0F1Xv5MREeChZeskSsdmLg" value="Byte"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1XxJMREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XxZMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XxpMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Xx5MREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XyJMREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XyZMREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XypMREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Xy5MREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XzJMREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XzZMREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1XzpMREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1Xz5MREeChZeskSsdmLg" key="_0F1XxpMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1X0JMREeChZeskSsdmLg" key="_0F1XxZMREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1X0ZMREeChZeskSsdmLg" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X0pMREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X05MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1X1JMREeChZeskSsdmLg" key="_0F1X05MREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1X1ZMREeChZeskSsdmLg" key="_0F1X0pMREeChZeskSsdmLg" value="default"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1X1pMREeChZeskSsdmLg" key="numberType" value="byte" comment=" pattern should be used only in Client &#xA; param id=&quot;pattern&quot; value=&quot;000&quot; / "/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1X2JMREeChZeskSsdmLg" tag="Validator">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X2ZMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1X2pMREeChZeskSsdmLg" key="_0F1X2ZMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberValidator"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1X25MREeChZeskSsdmLg" key="numberType" value="byte"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1X3JMREeChZeskSsdmLg" key="maximumNumber" value="126"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1X3ZMREeChZeskSsdmLg" key="minimumNumber" value="-128"/>
+        </validator>
+        <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1X3pMREeChZeskSsdmLg" key="isMandatory" value="true"/>
+      </descriptors>
+    </types>
+    <types xmi:type="transaction:Type" xmi:id="_0F1X35MREeChZeskSsdmLg" tag="type" id="Short">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X4JMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X4ZMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X4pMREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1X45MREeChZeskSsdmLg" key="_0F1X4ZMREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1X5JMREeChZeskSsdmLg" key="_0F1X4JMREeChZeskSsdmLg" value="Short"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1X5ZMREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X5pMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X55MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X6JMREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X6ZMREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X6pMREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X65MREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X7JMREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X7ZMREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X7pMREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X75MREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1X8JMREeChZeskSsdmLg" key="_0F1X55MREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1X8ZMREeChZeskSsdmLg" key="_0F1X5pMREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1X8pMREeChZeskSsdmLg" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X85MREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X9JMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1X9ZMREeChZeskSsdmLg" key="_0F1X9JMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1X9pMREeChZeskSsdmLg" key="_0F1X85MREeChZeskSsdmLg" value="default"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1X95MREeChZeskSsdmLg" key="numberType" value="short"/>
+        </converters>
+        <converters xmi:type="transaction:Converter" xmi:id="__pYeIEyTEeG3WJwqkhtLUw" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="__pYeIUyTEeG3WJwqkhtLUw" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="__pYeIkyTEeG3WJwqkhtLUw" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="__pYeI0yTEeG3WJwqkhtLUw" key="__pYeIkyTEeG3WJwqkhtLUw" value="com.ibm.btt.base.types.impl.NumberFormatConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="__pYeJEyTEeG3WJwqkhtLUw" key="__pYeIUyTEeG3WJwqkhtLUw" value="html"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="__pYeJUyTEeG3WJwqkhtLUw" key="numberType" value="short"/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1X-ZMREeChZeskSsdmLg" tag="Validator" extraInfo="&lt;!-- octal system is not support -->&#xA;&lt;!--param id=&quot;maximumNumber&quot; value=&quot;077777&quot; / -->&#xA;&lt;!--param id=&quot;minimumNumber&quot; value=&quot;-0100000&quot; / -->">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1X-pMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1X-5MREeChZeskSsdmLg" key="_0F1X-pMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberValidator"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1X_JMREeChZeskSsdmLg" key="numberType" value="short"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1X_ZMREeChZeskSsdmLg" key="maximumNumber" value="32766"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1X_pMREeChZeskSsdmLg" key="minimumNumber" value="-32767"/>
+        </validator>
+      </descriptors>
+    </types>
+    <types xmi:type="transaction:Type" xmi:id="_0F1X_5MREeChZeskSsdmLg" tag="type" id="Integer">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YAJMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YAZMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YApMREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YA5MREeChZeskSsdmLg" key="_0F1YAZMREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YBJMREeChZeskSsdmLg" key="_0F1YAJMREeChZeskSsdmLg" value="Integer"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1YBZMREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YBpMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YB5MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YCJMREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YCZMREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YCpMREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YC5MREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YDJMREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YDZMREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YDpMREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YD5MREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YEJMREeChZeskSsdmLg" key="_0F1YB5MREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YEZMREeChZeskSsdmLg" key="_0F1YBpMREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1YEpMREeChZeskSsdmLg" tag="Converter" extraInfo="&lt;!--param id=&quot;decimalPlaces&quot; value=&quot;-1&quot; / set to default value -->">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YE5MREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YFJMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YFZMREeChZeskSsdmLg" key="_0F1YFJMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YFpMREeChZeskSsdmLg" key="_0F1YE5MREeChZeskSsdmLg" value="default"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YF5MREeChZeskSsdmLg" key="numberType" value="integer"/>
+        </converters>
+        <converters xmi:type="transaction:Converter" xmi:id="_96vyEEyTEeG3WJwqkhtLUw" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_96vyEUyTEeG3WJwqkhtLUw" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_96vyEkyTEeG3WJwqkhtLUw" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_96vyE0yTEeG3WJwqkhtLUw" key="_96vyEkyTEeG3WJwqkhtLUw" value="com.ibm.btt.base.types.impl.NumberFormatConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_96vyFEyTEeG3WJwqkhtLUw" key="_96vyEUyTEeG3WJwqkhtLUw" value="html"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_96vyFUyTEeG3WJwqkhtLUw" key="numberType" value="integer"/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1YGJMREeChZeskSsdmLg" tag="Validator" extraInfo="&lt;!-- hexadecimal sytem is not support in btt type -->&#xA;&lt;!-- param id=&quot;maximumNumber&quot; value=&quot;0x7fffffff&quot; / -->&#xA;&lt;!-- param id=&quot;minimumNumber&quot; value=&quot;0x80000000&quot; / -->">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YGZMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YGpMREeChZeskSsdmLg" key="_0F1YGZMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberValidator"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YG5MREeChZeskSsdmLg" key="numberType" value="integer"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YHJMREeChZeskSsdmLg" key="maximumNumber" value="2147483647"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YHZMREeChZeskSsdmLg" key="minimumNumber" value="-2147483648"/>
+        </validator>
+      </descriptors>
+    </types>
+    <types xmi:type="transaction:Type" xmi:id="_0F1YHpMREeChZeskSsdmLg" tag="type" id="Long">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YH5MREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YIJMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YIZMREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YIpMREeChZeskSsdmLg" key="_0F1YIJMREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YI5MREeChZeskSsdmLg" key="_0F1YH5MREeChZeskSsdmLg" value="Long"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1YJJMREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YJZMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YJpMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YJ5MREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YKJMREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YKZMREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YKpMREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YK5MREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YLJMREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YLZMREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YLpMREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YL5MREeChZeskSsdmLg" key="_0F1YJpMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YMJMREeChZeskSsdmLg" key="_0F1YJZMREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1YMZMREeChZeskSsdmLg" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YMpMREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YM5MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YNJMREeChZeskSsdmLg" key="_0F1YM5MREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YNZMREeChZeskSsdmLg" key="_0F1YMpMREeChZeskSsdmLg" value="default"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YNpMREeChZeskSsdmLg" key="numberType" value="long"/>
+        </converters>
+        <converters xmi:type="transaction:Converter" xmi:id="_8NK18EyTEeG3WJwqkhtLUw" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_8NK18UyTEeG3WJwqkhtLUw" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_8NK18kyTEeG3WJwqkhtLUw" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_8NK180yTEeG3WJwqkhtLUw" key="_8NK18kyTEeG3WJwqkhtLUw" value="com.ibm.btt.base.types.impl.NumberFormatConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_8NK19EyTEeG3WJwqkhtLUw" key="_8NK18UyTEeG3WJwqkhtLUw" value="html"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_8NK19UyTEeG3WJwqkhtLUw" key="numberType" value="long"/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1YN5MREeChZeskSsdmLg" tag="Validator" extraInfo="&lt;!-- hexadecimal sytem is not support in btt type -->&#xA;&lt;!--param id=&quot;maximumNumber&quot; value=&quot;0x7fffffffffffffffL&quot; / -->&#xA;&lt;!--param id=&quot;minimumNumber&quot; value=&quot;0x8000000000000000L&quot; / -->">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YOJMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YOZMREeChZeskSsdmLg" key="_0F1YOJMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberValidator"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YOpMREeChZeskSsdmLg" key="numberType" value="long"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YO5MREeChZeskSsdmLg" key="maximumNumber" value="9223372036854775807"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YPJMREeChZeskSsdmLg" key="minimumNumber" value="-9223372036854775808"/>
+        </validator>
+      </descriptors>
+    </types>
+    <types xmi:type="transaction:Type" xmi:id="_0F1YPZMREeChZeskSsdmLg" tag="type" id="Float">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YPpMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YP5MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YQJMREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YQZMREeChZeskSsdmLg" key="_0F1YP5MREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YQpMREeChZeskSsdmLg" key="_0F1YPpMREeChZeskSsdmLg" value="Float"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1YQ5MREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YRJMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YRZMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YRpMREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YR5MREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YSJMREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YSZMREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YSpMREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YS5MREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YTJMREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YTZMREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YTpMREeChZeskSsdmLg" key="_0F1YRZMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YT5MREeChZeskSsdmLg" key="_0F1YRJMREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1YUJMREeChZeskSsdmLg" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YUZMREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YUpMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YU5MREeChZeskSsdmLg" key="_0F1YUpMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YVJMREeChZeskSsdmLg" key="_0F1YUZMREeChZeskSsdmLg" value="default"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YVZMREeChZeskSsdmLg" key="numberType" value="float"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YVpMREeChZeskSsdmLg" key="decimalPlaces" value="2"/>
+        </converters>
+        <converters xmi:type="transaction:Converter" xmi:id="_55BCAEyTEeG3WJwqkhtLUw" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_55BCAUyTEeG3WJwqkhtLUw" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_55BCAkyTEeG3WJwqkhtLUw" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_55BCA0yTEeG3WJwqkhtLUw" key="_55BCAkyTEeG3WJwqkhtLUw" value="com.ibm.btt.base.types.impl.NumberFormatConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_55BCBEyTEeG3WJwqkhtLUw" key="_55BCAUyTEeG3WJwqkhtLUw" value="html"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_55BCBUyTEeG3WJwqkhtLUw" key="numberType" value="float"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_wEB60E1MEeGbGfRk2kTtdg" key="decimalPlaces" value="2"/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1YV5MREeChZeskSsdmLg" tag="Validator" extraInfo="&lt;!-- scientific notation is not support in btt type -->&#xA;&lt;!--param id=&quot;maximumNumber&quot; value=&quot;0x1.fffffeP+127f&quot; / -->&#xA;&lt;!--param id=&quot;minimumNumber&quot; value=&quot;1.17549435E-38f&quot; / -->">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YWJMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YWZMREeChZeskSsdmLg" key="_0F1YWJMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberValidator"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YWpMREeChZeskSsdmLg" key="numberType" value="float"/>
+        </validator>
+      </descriptors>
+    </types>
+    <types xmi:type="transaction:Type" xmi:id="_0F1YW5MREeChZeskSsdmLg" tag="type" id="Double">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YXJMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YXZMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YXpMREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YX5MREeChZeskSsdmLg" key="_0F1YXZMREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YYJMREeChZeskSsdmLg" key="_0F1YXJMREeChZeskSsdmLg" value="Double"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1YYZMREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YYpMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YY5MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YZJMREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YZZMREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YZpMREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YZ5MREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YaJMREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YaZMREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YapMREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Ya5MREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YbJMREeChZeskSsdmLg" key="_0F1YY5MREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YbZMREeChZeskSsdmLg" key="_0F1YYpMREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1YbpMREeChZeskSsdmLg" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Yb5MREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YcJMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YcZMREeChZeskSsdmLg" key="_0F1YcJMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YcpMREeChZeskSsdmLg" key="_0F1Yb5MREeChZeskSsdmLg" value="default"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1Yc5MREeChZeskSsdmLg" key="numberType" value="double"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YdJMREeChZeskSsdmLg" key="decimalPlaces" value="3"/>
+        </converters>
+        <converters xmi:type="transaction:Converter" xmi:id="_4NCoYEyTEeG3WJwqkhtLUw" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_4NCoYUyTEeG3WJwqkhtLUw" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_4NCoYkyTEeG3WJwqkhtLUw" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_4NCoY0yTEeG3WJwqkhtLUw" key="_4NCoYkyTEeG3WJwqkhtLUw" value="com.ibm.btt.base.types.impl.NumberFormatConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_4NCoZEyTEeG3WJwqkhtLUw" key="_4NCoYUyTEeG3WJwqkhtLUw" value="html"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_4NCoZUyTEeG3WJwqkhtLUw" key="numberType" value="double"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_yHZgwE1MEeGbGfRk2kTtdg" key="decimalPlaces" value="3"/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1YdZMREeChZeskSsdmLg" tag="Validator" extraInfo="&lt;!-- scientific notation is not support in btt type -->&#xA;&lt;!--param id=&quot;maximumNumber&quot; value=&quot;1.7976931348623157e+308&quot; / -->&#xA;&lt;!--param id=&quot;minimumNumber&quot; value=&quot;0x0.0000000000001P-1022&quot; / -->">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YdpMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1Yd5MREeChZeskSsdmLg" key="_0F1YdpMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberValidator"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YeJMREeChZeskSsdmLg" key="numberType" value="double"/>
+        </validator>
+      </descriptors>
+    </types>
+    <types xmi:type="transaction:Type" xmi:id="_0F1YeZMREeChZeskSsdmLg" tag="type" id="BigInteger">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YepMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Ye5MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YfJMREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YfZMREeChZeskSsdmLg" key="_0F1Ye5MREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YfpMREeChZeskSsdmLg" key="_0F1YepMREeChZeskSsdmLg" value="BigInteger"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1Yf5MREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YgJMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YgZMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YgpMREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Yg5MREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YhJMREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YhZMREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YhpMREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Yh5MREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YiJMREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YiZMREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YipMREeChZeskSsdmLg" key="_0F1YgZMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1Yi5MREeChZeskSsdmLg" key="_0F1YgJMREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1YjJMREeChZeskSsdmLg" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YjZMREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YjpMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1Yj5MREeChZeskSsdmLg" key="_0F1YjpMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YkJMREeChZeskSsdmLg" key="_0F1YjZMREeChZeskSsdmLg" value="default"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YkZMREeChZeskSsdmLg" key="numberType" value="bigInteger"/>
+        </converters>
+        <converters xmi:type="transaction:Converter" xmi:id="_FV2uMEyTEeG3WJwqkhtLUw" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_FV2uMUyTEeG3WJwqkhtLUw" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_FV2uMkyTEeG3WJwqkhtLUw" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_FV2uM0yTEeG3WJwqkhtLUw" key="_FV2uMkyTEeG3WJwqkhtLUw" value="com.ibm.btt.base.types.impl.NumberFormatConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_Ic27YEyTEeG3WJwqkhtLUw" key="_FV2uMUyTEeG3WJwqkhtLUw" value="html"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_NaD1MEyTEeG3WJwqkhtLUw" key="numberType" value="bigInteger"/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1Yk5MREeChZeskSsdmLg" tag="Validator">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YlJMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YlZMREeChZeskSsdmLg" key="_0F1YlJMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberValidator"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YlpMREeChZeskSsdmLg" key="numberType" value="BigInteger"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1Yl5MREeChZeskSsdmLg" key="maximumNumber" value="9999999999999"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YmJMREeChZeskSsdmLg" key="minimumNumber" value="-9999999999999"/>
+        </validator>
+      </descriptors>
+    </types>
+    <types xmi:type="transaction:Type" xmi:id="_0F1YmZMREeChZeskSsdmLg" tag="type" id="BigDecimal">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YmpMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Ym5MREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YnJMREeChZeskSsdmLg" name="keyBuilder" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YnZMREeChZeskSsdmLg" key="_0F1Ym5MREeChZeskSsdmLg" value="com.ibm.btt.base.DataField"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YnpMREeChZeskSsdmLg" key="_0F1YmpMREeChZeskSsdmLg" value="BigDecimal"/>
+      <descriptors xmi:type="transaction:PropertyDescriptor" xmi:id="_0F1Yn5MREeChZeskSsdmLg" tag="Descriptor" id="typeDefault">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YoJMREeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YoZMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YopMREeChZeskSsdmLg" name="description" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Yo5MREeChZeskSsdmLg" name="initialValue" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YpJMREeChZeskSsdmLg" name="isDisabled" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YpZMREeChZeskSsdmLg" name="isHidden" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YppMREeChZeskSsdmLg" name="isMandatory" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1Yp5MREeChZeskSsdmLg" name="isOmitted" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YqJMREeChZeskSsdmLg" name="isReadOnly" type="java.lang.Boolean"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YqZMREeChZeskSsdmLg" name="refType" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YqpMREeChZeskSsdmLg" key="_0F1YoZMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1Yq5MREeChZeskSsdmLg" key="_0F1YoJMREeChZeskSsdmLg" value="typeDefault"/>
+        <converters xmi:type="transaction:Converter" xmi:id="_0F1YrJMREeChZeskSsdmLg" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YrZMREeChZeskSsdmLg" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YrpMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1Yr5MREeChZeskSsdmLg" key="_0F1YrpMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YsJMREeChZeskSsdmLg" key="_0F1YrZMREeChZeskSsdmLg" value="default"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YsZMREeChZeskSsdmLg" key="numberType" value="bigDecimal"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YspMREeChZeskSsdmLg" key="decimalPlaces" value="3"/>
+        </converters>
+        <converters xmi:type="transaction:Converter" xmi:id="_1MYTwEyTEeG3WJwqkhtLUw" tag="Converter">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_1MYTwUyTEeG3WJwqkhtLUw" name="convTypes" required="true" type="java.lang.String"/>
+          <attributes xmi:type="transaction:Attribute" xmi:id="_1MYTwkyTEeG3WJwqkhtLUw" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_1MYTw0yTEeG3WJwqkhtLUw" key="_1MYTwkyTEeG3WJwqkhtLUw" value="com.ibm.btt.base.types.impl.NumberFormatConverter"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_1MYTxEyTEeG3WJwqkhtLUw" key="_1MYTwUyTEeG3WJwqkhtLUw" value="html"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_1MYTxUyTEeG3WJwqkhtLUw" key="numberType" value="bigDecimal"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_8dhWIE1DEeGbGfRk2kTtdg" key="decimalPlaces" value="3"/>
+        </converters>
+        <validator xmi:type="transaction:Validator" xmi:id="_0F1Ys5MREeChZeskSsdmLg" tag="Validator">
+          <attributes xmi:type="transaction:Attribute" xmi:id="_0F1YtJMREeChZeskSsdmLg" name="implClass" required="true" type="java.lang.String"/>
+          <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_0F1YtZMREeChZeskSsdmLg" key="_0F1YtJMREeChZeskSsdmLg" value="com.ibm.btt.base.types.impl.NumberValidator"/>
+          <params xmi:type="transaction:StringToStringMapEntry" xmi:id="_0F1YtpMREeChZeskSsdmLg" key="numberType" value="bigDecimal"/>
+        </validator>
+      </descriptors>
+    </types>
+  </type>
+  <globalTag xmi:type="transaction:Taggable" xmi:id="_0F1Yt5MREeChZeskSsdmLg"/>
+</transaction:WorkProduct>

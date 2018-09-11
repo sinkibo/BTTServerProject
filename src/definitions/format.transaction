@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction:WorkProduct xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:transaction="http://btt.cn.ibm.com/transaction" xmi:id="__VlzoId7EeCiaYhjoNqvcw">
+  <format xmi:type="transaction:FormatCategory" xmi:id="__VlzoYd7EeCiaYhjoNqvcw"/>
+  <globalTag xmi:type="transaction:Taggable" xmi:id="__Vlzood7EeCiaYhjoNqvcw"/>
+</transaction:WorkProduct>

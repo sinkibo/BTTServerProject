@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction:WorkProduct xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:transaction="http://btt.cn.ibm.com/transaction" xmi:id="_kAlAAJMQEeChZeskSsdmLg">
+  <operation xmi:type="transaction:OperationCategory" xmi:id="_kAlAAZMQEeChZeskSsdmLg">
+    <operations xmi:type="transaction:Operation" xmi:id="_kAlAApMQEeChZeskSsdmLg" tag="operation" id="dse_htmlProcessorOp" comment=" Definition for the HTML Processor Operation. &#xA; This is the internal operation used by the infrastructure to control and manage &#xA; the processors that are created for navigation flows">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_kAlAA5MQEeChZeskSsdmLg" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_kAlABJMQEeChZeskSsdmLg" name="context" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_kAlABZMQEeChZeskSsdmLg" name="implClass" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_kAlABpMQEeChZeskSsdmLg" name="xVal" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_kAlAB5MQEeChZeskSsdmLg" key="_kAlABZMQEeChZeskSsdmLg" value="com.ibm.btt.automaton.html.DSEHtmlProcessorOperation"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_kAlACJMQEeChZeskSsdmLg" key="_kAlAA5MQEeChZeskSsdmLg" value="dse_htmlProcessorOp"/>
+    </operations>
+  </operation>
+  <globalTag xmi:type="transaction:Taggable" xmi:id="_kAlACZMQEeChZeskSsdmLg"/>
+</transaction:WorkProduct>

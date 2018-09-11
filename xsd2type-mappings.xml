@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns:xsi="http://www.w3.org/2001/XInclude">
+
+  <!-- This file is used by BTT Web services tool during SDO generation -->
+  <!-- Tag 'type-mapping': map XSD type name into BTT type name -->
+  <!-- Tag 'param-mapping': map XSD restriction name into BTT parameter name -->
+  <!-- The default type mapping could be enabled by the following definition.
+       <type-mapping xsdName="*" />
+       And also, the parameter mapping could be defined for default name mapping.
+       <type-mapping xsdName="*">
+         <param-mapping xsdName="maxLength" bttName="maximumLength" />
+       </type-mapping >     
+  -->
+  
+	<type-mapping xsdName="string" bttName="String">
+		<param-mapping xsdName="maxLength" bttName="maximumLength" />
+		<param-mapping xsdName="minLength" bttName="minimumLength" />
+		<param-mapping xsdName="pattern" bttName="regExp" />
+	</type-mapping>
+	
+	<type-mapping xsdName="boolean" bttName="Boolean" />
+	
+	<type-mapping xsdName="base64Binary" bttName="ByteArray">
+		<param-mapping xsdName="maxLength" bttName="maximumLength" />
+		<param-mapping xsdName="minLength" bttName="minimumLength" />
+	</type-mapping>
+	
+	<type-mapping xsdName="duration" bttName="Duration">
+		<param-mapping xsdName="maxInclusive" bttName="maximumDur" />
+		<param-mapping xsdName="minInclusive" bttName="minimumDur" />
+	</type-mapping>
+	
+	<type-mapping xsdName="date" bttName="XMLGregorianCalendar">
+		<param-mapping xsdName="maxInclusive" bttName="maximumDate" />
+		<param-mapping xsdName="minInclusive" bttName="minimumDate" />
+	</type-mapping>
+	
+	<type-mapping xsdName="time" bttName="XMLGregorianCalendar">
+		<param-mapping xsdName="maxInclusive" bttName="maximumDate" />
+		<param-mapping xsdName="minInclusive" bttName="minimumDate" />
+	</type-mapping>
+	
+	<type-mapping xsdName="dateTime" bttName="XMLGregorianCalendar">
+		<param-mapping xsdName="maxInclusive" bttName="maximumDate" />
+		<param-mapping xsdName="minInclusive" bttName="minimumDate" />
+	</type-mapping>
+	
+	<type-mapping xsdName="byte" bttName="Byte">
+		<param-mapping xsdName="maxInclusive" bttName="maximumNumber" />
+		<param-mapping xsdName="minInclusive" bttName="minimumNumber" />
+	</type-mapping>
+	
+	<type-mapping xsdName="short" bttName="Short">
+		<param-mapping xsdName="maxInclusive" bttName="maximumNumber" />
+		<param-mapping xsdName="minInclusive" bttName="minimumNumber" />
+	</type-mapping>
+	
+	<type-mapping xsdName="int" bttName="Integer">
+		<param-mapping xsdName="maxInclusive" bttName="maximumNumber" />
+		<param-mapping xsdName="minInclusive" bttName="minimumNumber" />
+	</type-mapping>
+	
+	<type-mapping xsdName="long" bttName="Long">
+		<param-mapping xsdName="maxInclusive" bttName="maximumNumber" />
+		<param-mapping xsdName="minInclusive" bttName="minimumNumber" />
+	</type-mapping>
+	
+	<type-mapping xsdName="float" bttName="Float">
+		<param-mapping xsdName="maxInclusive" bttName="maximumNumber" />
+		<param-mapping xsdName="minInclusive" bttName="minimumNumber" />
+	</type-mapping>
+	
+	<type-mapping xsdName="double" bttName="Double">
+		<param-mapping xsdName="maxInclusive" bttName="maximumNumber" />
+		<param-mapping xsdName="minInclusive" bttName="minimumNumber" />
+	</type-mapping>
+	
+	<type-mapping xsdName="integer" bttName="BigInteger">
+		<param-mapping xsdName="maxInclusive" bttName="maximumNumber" />
+		<param-mapping xsdName="minInclusive" bttName="minimumNumber" />
+	</type-mapping>
+	
+	<type-mapping xsdName="decimal" bttName="BigDecimal">
+		<param-mapping xsdName="maxInclusive" bttName="maximumNumber" />
+		<param-mapping xsdName="minInclusive" bttName="minimumNumber" />
+		<param-mapping xsdName="fractionDigits" bttName="decimalPlaces" />
+	</type-mapping>
+	
+</mappings>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LoginFlow>
+
+
+	<htmlProcessor context="LoginFlowCtx" id="LoginFlow">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition do_nothing="false" id="initial.start" targetState="LoginState"/>
+			</transitions>
+		</htmlState>
+
+		<openAPIState id="LoginState" input="account_id,password" output="account_id,message" type="client">
+			<transitions>
+				<htmlTransition do_nothing="false" id="LoginState.login" targetState="LoginOp"/>
+			</transitions>
+		</openAPIState>
+
+		<operationState typeIdInfo="LoginOp" id="LoginOp" type="operation">
+			<transitions>
+				<htmlTransition do_nothing="false" id="LoginOp.error" targetState="LoginState"/>
+				<htmlTransition do_nothing="false" id="LoginOp.success" outputMapFmt="LoginOp.success_OutputFmt" targetState="MockDataOp"/>
+			</transitions>
+		</operationState>
+
+		<operationState typeIdInfo="MockDataOp" id="MockDataOp" type="operation">
+			<transitions>
+				<htmlTransition do_nothing="false" id="MockDataOp.next" inputMapFmt="OK_InputFmt" targetState="OK"/>
+			</transitions>
+		</operationState>
+
+		<openAPIState typeIdInfo="OK" id="OK" inputMapFmt="OK_InputFmt" output="account_id,name,gender" type="final"/>
+	</htmlProcessor>
+
+	<operation id="LoginOp" context="LoginOpCtx" implClass="com.ibm.btt.application.op.LoginOp"/>
+
+	<operation id="MockDataOp" context="MockDataOpCtx" implClass="com.ibm.btt.application.op.MockDataOp"/>
+
+	<context id="LoginFlowCtx" type="op" parent="sessionCtx">
+		<refKColl refId="LoginFlowRecord"/>
+	</context>
+
+	<context id="LoginOpCtx" type="op">
+		<refKColl refId="LoginOpRecord"/>
+	</context>
+
+	<context id="MockDataOpCtx" type="op">
+		<refKColl refId="MockDataOpRecord"/>
+	</context>
+
+	<kColl id="LoginFlowRecord" dynamic="true">
+		<data id="account_id" refType="String"/>
+		<data id="password" value="123456" refType="String"/>
+		<data id="message" refType="String"/>
+		<data id="name" refType="String"/>
+		<data id="gender" refType="String"/>
+	</kColl>
+
+	<kColl id="LoginOpRecord">
+	</kColl>
+
+	<kColl id="MockDataOpRecord">
+	</kColl>
+
+	<fmtDef id="LoginOp.success_OutputFmt">
+		<mapperConverterExpression>
+			<map from="account_id" convType="" to="MockData.account_id"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="OK_InputFmt">
+		<mapperConverterExpression>
+			<map from="MockData.name" convType="" to="name"/>
+			<map from="MockData.gender" convType="" to="gender"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</LoginFlow>

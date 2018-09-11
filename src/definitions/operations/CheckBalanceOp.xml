@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CheckBalanceOp>
+
+	<operation id="CheckBalanceOp" implClass="com.ibm.btt.application.op.CheckBalanceOp"/>
+
+	<context id="CheckBalanceCtx" type="op">
+		<refKColl refId="CheckBalanceRecord"/>
+	</context>
+
+	<kColl id="CheckBalanceRecord">
+		<data id="card_id" refType="String"/>
+		<data id="balance" refType="Currency"/>
+	</kColl>
+
+</CheckBalanceOp>

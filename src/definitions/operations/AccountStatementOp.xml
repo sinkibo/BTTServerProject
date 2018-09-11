@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AccountStatementOp>
+
+	<operation id="AccountStatementOp" context="AccountStatementCtx" implClass="com.ibm.btt.application.op.AccountStatementOp"/>
+
+	<context id="AccountStatementCtx" type="op">
+		<refKColl refId="AccountStatementRecord"/>
+	</context>
+
+	<kColl id="AccountStatementRecord">
+		<data id="account_id" refType="String"/>
+	</kColl>
+
+</AccountStatementOp>

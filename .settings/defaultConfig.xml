@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<defaultConfig.xml>
+  <xuiFolder id="xuiFolder" value="xui" />
+  <defFolder id="defFolder" value="src/definitions" />
+  <cssFolder id="cssFolder" value="WebContent/css" />
+  <jspFolder id="jspFolder" value="WebContent/jsp" />
+  <listFilesFolder id="listFilesFolder" value="WebContent/listFiles" />
+  <templatesFolder id="templatesFolder" value="WebContent/templates" />
+  <imgFolder id="imgFolder" value="WebContent/img" />
+  <nlsFolder id="nlsFolder" value="src/nls" />
+  <javascriptFolder id="jsFolder" value="WebContent/js" />
+  <xuiSnippetFolder value="/xui/snippet" />
+  <MobileEditorModel id="MobileEditorModel" value="xui_mobile" />
+  <MobileEditorRuntime id="MobileEditorRuntime" value="WebContent/view" />
+  <MobileEditorRuntimeLibrary id="MobileEditorRuntimeLibrary" value="WebContent/dojo_mobile" />
+  <printFolder id="printFolder" value="xui_print" />
+</defaultConfig.xml>

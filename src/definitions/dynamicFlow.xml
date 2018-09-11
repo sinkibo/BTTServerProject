@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DynamicFlow enabled="false">
+	<!-- 
+	<TargetFlow enabled="true" pattern=".*">
+		<TargetState type="operation" pattern=".*">
+			<DynamicState tagName="htmlState">
+				<Attr id="id" value="commonErrorFlow" />
+				<Attr id="type" value="subFlow" />
+				<Attr id="typeIdInfo" value="ErrorFlow" />
+			</DynamicState>
+			<AfterExecution event="error" changeAll="false" inputMapFmt="errorInfoMapper_1">
+				<Transition event="retry" stateId="hostOperation" outputMapFmt="errorInfoMapper_2"/>
+				<Transition event="cancel" stateId="cancelFinal"/>
+			</AfterExecution>
+		</TargetState>
+	</TargetFlow>
+	<TargetFlow enabled="false" pattern="sampleFlow">
+		<TargetState type="operation,subFlow" pattern="...">
+			<DynamicState tagName="...">
+				...
+			</DynamicState>
+			<BeforeExecution>
+				...
+			</BeforeExecution>
+			<AfterExecution event="..." changeAll="true" inputMapFmt="..." outputMapFmt="...">
+				<Transition event="..." stateId="..." pattern="..." inputMapFmt="..." outputMapFmt="..."/>
+				<Transition event="..." pattern="..." inputMapFmt="..." outputMapFmt="..."/>
+			</AfterExecution>
+		</TargetState>
+	</TargetFlow>
+	 -->
+</DynamicFlow>

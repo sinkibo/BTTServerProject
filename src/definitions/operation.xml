@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operation.xml>
+
+	<!-- Definition for the HTML Processor Operation. -->
+	<!-- This is the internal operation used by the infrastructure to control and manage -->
+	<!-- the processors that are created for navigation flows-->
+	<operation id="dse_htmlProcessorOp" implClass="com.ibm.btt.automaton.html.DSEHtmlProcessorOperation"/>
+
+</operation.xml>

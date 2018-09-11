@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AccountTransferFlow>
+
+
+	<htmlProcessor context="AccountTransferFlowCtx" id="AccountTransferFlow">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition do_nothing="false" id="initial.start" outputMapFmt="initial.start_OutputFmt" targetState="TransferState"/>
+			</transitions>
+		</htmlState>
+
+		<operationState typeIdInfo="AccountTransferOp" id="AccountTransferOp" outputMapFmt="AccountTransferOp_OutputFmt" type="operation">
+			<transitions>
+				<htmlTransition do_nothing="false" id="AccountTransferOp.success" outputMapFmt="AccountTransferOp_OutputFmt" targetState="ResultState"/>
+				<htmlTransition do_nothing="false" id="AccountTransferOp.error" outputMapFmt="AccountTransferOp_OutputFmt" targetState="TransferState"/>
+			</transitions>
+		</operationState>
+
+		<openAPIState id="TransferState" input="transferForm" output="message,cardList,payeeList" type="client">
+			<transitions>
+				<htmlTransition do_nothing="false" id="TransferState.submit" targetState="AccountTransferOp"/>
+				<htmlTransition do_nothing="false" id="TransferState.exit" targetState="OK"/>
+			</transitions>
+		</openAPIState>
+
+		<openAPIState id="ResultState" output="account_id,message,transferForm" type="client">
+			<transitions>
+				<htmlTransition do_nothing="false" id="ResultState.transfer" targetState="TransferState"/>
+				<htmlTransition do_nothing="false" id="ResultState.exit" targetState="OK"/>
+			</transitions>
+		</openAPIState>
+
+		<openAPIState typeIdInfo="OK" id="OK" output="*" type="final"/>
+	</htmlProcessor>
+
+	<operation id="AccountTransferOp" context="AccountTransferOpCtx" implClass="com.ibm.btt.application.op.TransferOp"/>
+
+	<context id="AccountTransferFlowCtx" type="op" parent="sessionCtx">
+		<refKColl refId="AccountTransferFlowRecord"/>
+	</context>
+
+	<context id="AccountTransferOpCtx" type="op">
+		<refKColl refId="AccountTransferOpRecord"/>
+	</context>
+
+	<kColl id="AccountTransferFlowRecord" dynamic="true">
+		<data id="account_id" refType="String"/>
+		<data id="password" value="123456" refType="String"/>
+		<data id="message" value="" refType="String"/>
+		<data id="card_amount" refType="Integer"/>
+		<data id="total_balance" refType="Currency"/>
+		<data id="selectCardId" refType="Number"/>
+		<refData refId="payeeList"/>
+		<refData refId="cardList"/>
+		<refData refId="transferForm" lazy="false"/>
+	</kColl>
+
+	<kColl id="AccountTransferOpRecord">
+	</kColl>
+
+	<fmtDef id="initial.start_OutputFmt">
+		<mapperConverterExpression>
+			<map from="MockData.account_id" convType="" to="account_id"/>
+			<map from="MockData.cardList" convType="" to="cardList" append="false"/>
+			<map from="MockData.payeeList" convType="" to="payeeList" append="false"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="AccountTransferOp_OutputFmt">
+		<mapperConverterExpression>
+			<map from="cardList" convType="" to="MockData.cardList" append="false"/>
+			<map from="total_balance" convType="" to="MockData.total_balance"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</AccountTransferFlow>

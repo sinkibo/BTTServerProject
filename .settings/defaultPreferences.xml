@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<defaultPreferences.xml>
+	<ShowPreferences id="ShowProject" value="true" />
+	<Definitions id="Dictionary" value="true" />
+	<Definitions id="Contexts" value="true" />
+	<Definitions id="Formats" value="true" />
+	<Definitions id="Services" value="true" />
+	<Definitions id="Types" value="true" />
+	<Definitions id="Operation" value="true" />
+	<Definitions id="Processor" value="true" />
+	<Folders id="Flows" value="true" />
+	<Folders id="Operations" value="true" />
+	<Folders id="Views" value="true" />
+	<Folders id="Resources" value="true" />
+	<Folders id="Definitions" value="true" />
+	<BuildMode id="DebugTemplate" value="true" path="template_debug.ftl" />
+	<BuildMode id="RuntimeTemplate" value="false" path="template.ftl" />
+	<TableLayout id="table" value="false" />
+	<DivLayout id="div" value="true" />
+</defaultPreferences.xml>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EditPayeeFlow>
+
+
+	<htmlProcessor context="EditPayeeFlowCtx" id="EditPayeeFlow">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition do_nothing="false" id="initial.start" outputMapFmt="initial.start_OutputFmt" targetState="PayeeState"/>
+			</transitions>
+		</htmlState>
+
+		<operationState typeIdInfo="EditPayeeOp" id="EditPayeeOp" outputMapFmt="EditPayeeOp_OutputFmt" type="operation">
+			<transitions>
+				<htmlTransition do_nothing="false" id="EditPayeeOp.result" outputMapFmt="EditPayeeOp_OutputFmt" targetState="PayeeState"/>
+			</transitions>
+		</operationState>
+
+		<openAPIState typeIdInfo="OK" id="OK" output="*" type="final"/>
+
+		<openAPIState id="PayeeState" input="payeeForm" output="message,payeeList" type="client">
+			<transitions>
+				<htmlTransition do_nothing="false" id="PayeeState.submit" targetState="EditPayeeOp"/>
+				<htmlTransition do_nothing="false" id="PayeeState.exit" targetState="OK"/>
+			</transitions>
+		</openAPIState>
+	</htmlProcessor>
+
+	<operation id="EditPayeeOp" context="EditPayeeOpCtx" implClass="com.ibm.btt.application.op.PayeeOp"/>
+
+	<context id="EditPayeeFlowCtx" type="op" parent="sessionCtx">
+		<refKColl refId="EditPayeeFlowRecord"/>
+	</context>
+
+	<context id="EditPayeeOpCtx" type="op">
+		<refKColl refId="EditPayeeOpRecord"/>
+	</context>
+
+	<kColl id="EditPayeeFlowRecord" dynamic="true">
+		<data id="account_id" refType="String"/>
+		<data id="password" value="123456" refType="String"/>
+		<data id="message" refType="String"/>
+		<iColl id="cardList">
+			<kColl id="card">
+				<data id="card_id" refType="Number"/>
+				<data id="card_type" refType="String"/>
+				<data id="balance" refType="Currency">
+					<param value="USD" id="currency"/>
+				</data>
+				<iColl id="historyList">
+					<kColl id="history">
+						<data id="date" refType="Date"/>
+						<data id="name" refType="String"/>
+						<data id="amount" refType="Currency"/>
+					</kColl>
+				</iColl>
+			</kColl>
+		</iColl>
+		<iColl id="payeeList">
+			<kColl id="payee">
+				<data id="name" refType="String"/>
+				<data id="phone" refType="String"/>
+				<data id="card_id" refType="String"/>
+			</kColl>
+		</iColl>
+		<data id="card_amount" refType="Integer"/>
+		<data id="total_balance" refType="Currency"/>
+		<data id="selectCardId" refType="String"/>
+		<kColl id="transferForm">
+			<data id="fromCardId" refType="Number"/>
+			<data id="toCardId" refType="Number"/>
+			<data id="amount" refType="Currency">
+				<param value="USD" id="currency"/>
+			</data>
+		</kColl>
+		<kColl id="payeeForm">
+			<data id="command" refType="String"/>
+			<kColl id="payee">
+				<data id="name" refType="String"/>
+				<data id="phone" refType="String"/>
+				<data id="card_id" refType="String"/>
+			</kColl>
+		</kColl>
+	</kColl>
+
+	<kColl id="EditPayeeOpRecord">
+	</kColl>
+
+	<fmtDef id="initial.start_OutputFmt">
+		<mapperConverterExpression>
+			<map from="MockData.payeeList" convType="" to="payeeList" append="false"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+	<fmtDef id="EditPayeeOp_OutputFmt">
+		<mapperConverterExpression>
+			<map from="payeeList" convType="" to="MockData.payeeList" append="false"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</EditPayeeFlow>

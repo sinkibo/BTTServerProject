@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction:WorkProduct xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:transaction="http://btt.cn.ibm.com/transaction" xmi:id="_9NiiAYd7EeCiaYhjoNqvcw">
+  <context xmi:type="transaction:ContextCategory" xmi:id="_9NiiAod7EeCiaYhjoNqvcw">
+    <contexts xmi:type="transaction:Context" xmi:id="_9NiiA4d7EeCiaYhjoNqvcw" tag="context" id="branchServer" comment="root context">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_9NiiBId7EeCiaYhjoNqvcw" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_9NiiBYd7EeCiaYhjoNqvcw" name="type" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_9NiiBod7EeCiaYhjoNqvcw" name="addToDynamicKColl" type="java.lang.Boolean"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_9NiiB4d7EeCiaYhjoNqvcw" name="parent" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_9NiiCId7EeCiaYhjoNqvcw" key="_9NiiBYd7EeCiaYhjoNqvcw" value="branch"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_9NiiCYd7EeCiaYhjoNqvcw" key="_9NiiBId7EeCiaYhjoNqvcw" value="branchServer"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_9NiiCod7EeCiaYhjoNqvcw" key="_9NiiB4d7EeCiaYhjoNqvcw" value="nil"/>
+      <refElement xmi:type="transaction:RefKColl" xmi:id="_9NiiC4d7EeCiaYhjoNqvcw" tag="refKColl">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_9NiiDId7EeCiaYhjoNqvcw" name="refId" required="true" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_9NiiDYd7EeCiaYhjoNqvcw" key="_9NiiDId7EeCiaYhjoNqvcw" value="branchData"/>
+      </refElement>
+      <refServices xmi:type="transaction:RefService" xmi:id="_9NiiDod7EeCiaYhjoNqvcw" tag="refService">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_9NiiD4d7EeCiaYhjoNqvcw" name="refId" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_9NiiEId7EeCiaYhjoNqvcw" name="alias" required="true" type="java.lang.String"/>
+        <attributes xmi:type="transaction:Attribute" xmi:id="_9NiiEYd7EeCiaYhjoNqvcw" name="type" required="true" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_9NiiEod7EeCiaYhjoNqvcw" key="_9NiiEId7EeCiaYhjoNqvcw" value="realCSServer"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_9NiiE4d7EeCiaYhjoNqvcw" key="_9NiiD4d7EeCiaYhjoNqvcw" value="realCSServer"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_9NiiFId7EeCiaYhjoNqvcw" key="_9NiiEYd7EeCiaYhjoNqvcw" value="cs"/>
+      </refServices>
+    </contexts>
+    <contexts xmi:type="transaction:Context" xmi:id="_9NiiFYd7EeCiaYhjoNqvcw" tag="context" id="sessionCtx">
+      <attributes xmi:type="transaction:Attribute" xmi:id="_9NiiFod7EeCiaYhjoNqvcw" name="id" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_9NiiF4d7EeCiaYhjoNqvcw" name="type" required="true" type="java.lang.String"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_9NiiGId7EeCiaYhjoNqvcw" name="addToDynamicKColl" type="java.lang.Boolean"/>
+      <attributes xmi:type="transaction:Attribute" xmi:id="_9NiiGYd7EeCiaYhjoNqvcw" name="parent" type="java.lang.String"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_9NiiGod7EeCiaYhjoNqvcw" key="_9NiiF4d7EeCiaYhjoNqvcw" value="session"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_9NiiG4d7EeCiaYhjoNqvcw" key="_9NiiGId7EeCiaYhjoNqvcw" value="true"/>
+      <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_9NiiHId7EeCiaYhjoNqvcw" key="_9NiiFod7EeCiaYhjoNqvcw" value="sessionCtx"/>
+      <refElement xmi:type="transaction:RefKColl" xmi:id="_9NiiHYd7EeCiaYhjoNqvcw" tag="refKColl">
+        <attributes xmi:type="transaction:Attribute" xmi:id="_9NiiHod7EeCiaYhjoNqvcw" name="refId" required="true" type="java.lang.String"/>
+        <values xmi:type="transaction:AttributeToStringMapEntry" xmi:id="_9NiiH4d7EeCiaYhjoNqvcw" key="_9NiiHod7EeCiaYhjoNqvcw" value="sessionData"/>
+      </refElement>
+    </contexts>
+  </context>
+  <globalTag xmi:type="transaction:Taggable" xmi:id="_9NiiIId7EeCiaYhjoNqvcw"/>
+</transaction:WorkProduct>

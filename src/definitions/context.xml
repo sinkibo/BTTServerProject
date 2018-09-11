@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context.xml>
+
+	<!--root context-->
+	<context id="branchServer" type="branch" parent="nil">
+		<refKColl refId="branchData"/>
+		<refService refId="realCSServer" alias="realCSServer" type="cs"/>
+	</context>
+
+	<context id="sessionCtx" type="session" addToDynamicKColl="true">
+		<refKColl refId="sessionData"/>
+	</context>
+
+</context.xml>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type.xml>
+
+	<type id="String" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.StringConverter"/>
+			<Validator implClass="com.ibm.btt.base.types.impl.StringValidator"/>
+		</Descriptor>
+	</type>
+
+	<type id="Date" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.DateConverter">
+				<param value="yyyy-MM-dd" id="pattern"/>
+			</Converter>
+			<Validator implClass="com.ibm.btt.base.types.impl.DateValidator"/>
+		</Descriptor>
+	</type>
+
+	<type id="Currency" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.CurrencyConverter">
+				<param value="EUR" id="currency"/>
+				<param value="bigDecimal" id="numberType"/>
+			</Converter>
+			<Validator implClass="com.ibm.btt.base.types.impl.CurrencyValidator">
+				<param value="bigDecimal" id="numberType"/>
+			</Validator>
+		</Descriptor>
+	</type>
+
+	<type id="Number" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.NumberConverter"/>
+			<Converter convTypes="html" implClass="com.ibm.btt.base.types.impl.NumberFormatConverter"/>
+			<Validator implClass="com.ibm.btt.base.types.impl.NumberValidator"/>
+		</Descriptor>
+	</type>
+
+	<type id="Boolean" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.BooleanConverter"/>
+			<Validator implClass="com.ibm.btt.base.types.impl.BooleanValidator"/>
+		</Descriptor>
+	</type>
+
+	<type id="ByteArray" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.ByteArrayConverter"/>
+			<Validator implClass="com.ibm.btt.base.types.impl.ByteArrayValidator"/>
+		</Descriptor>
+	</type>
+
+	<type id="Duration" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.DurationConverter"/>
+			<Validator implClass="com.ibm.btt.base.types.impl.DurationValidator"/>
+		</Descriptor>
+	</type>
+
+	<type id="XMLGregorianCalendar" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.XMLGregorianCalendarConverter">
+				<param value="yyyy-MM-dd" id="pattern"/>
+			</Converter>
+			<Validator implClass="com.ibm.btt.base.types.impl.XMLGregorianCalendarValidator"/>
+		</Descriptor>
+	</type>
+
+	<type id="Byte" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<param value="true" id="isMandatory"/>
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.NumberConverter">
+				<!-- pattern should be used only in Client -->
+				<!-- param id="pattern" value="000" / -->
+				<param value="byte" id="numberType"/>
+			</Converter>
+			<Validator implClass="com.ibm.btt.base.types.impl.NumberValidator">
+				<param value="byte" id="numberType"/>
+				<param value="126" id="maximumNumber"/>
+				<param value="-128" id="minimumNumber"/>
+			</Validator>
+		</Descriptor>
+	</type>
+
+	<type id="Short" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.NumberConverter">
+				<param value="short" id="numberType"/>
+			</Converter>
+			<Converter convTypes="html" implClass="com.ibm.btt.base.types.impl.NumberFormatConverter">
+				<param value="short" id="numberType"/>
+			</Converter>
+			<Validator implClass="com.ibm.btt.base.types.impl.NumberValidator">
+				<param value="short" id="numberType"/>
+				<param value="32766" id="maximumNumber"/>
+				<param value="-32767" id="minimumNumber"/>
+			</Validator>
+		</Descriptor>
+	</type>
+
+	<type id="Integer" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.NumberConverter">
+				<param value="integer" id="numberType"/>
+			</Converter>
+			<Converter convTypes="html" implClass="com.ibm.btt.base.types.impl.NumberFormatConverter">
+				<param value="integer" id="numberType"/>
+			</Converter>
+			<Validator implClass="com.ibm.btt.base.types.impl.NumberValidator">
+				<param value="integer" id="numberType"/>
+				<param value="2147483647" id="maximumNumber"/>
+				<param value="-2147483648" id="minimumNumber"/>
+			</Validator>
+		</Descriptor>
+	</type>
+
+	<type id="Long" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.NumberConverter">
+				<param value="long" id="numberType"/>
+			</Converter>
+			<Converter convTypes="html" implClass="com.ibm.btt.base.types.impl.NumberFormatConverter">
+				<param value="long" id="numberType"/>
+			</Converter>
+			<Validator implClass="com.ibm.btt.base.types.impl.NumberValidator">
+				<param value="long" id="numberType"/>
+				<param value="9223372036854775807" id="maximumNumber"/>
+				<param value="-9223372036854775808" id="minimumNumber"/>
+			</Validator>
+		</Descriptor>
+	</type>
+
+	<type id="Float" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.NumberConverter">
+				<param value="float" id="numberType"/>
+				<param value="2" id="decimalPlaces"/>
+			</Converter>
+			<Converter convTypes="html" implClass="com.ibm.btt.base.types.impl.NumberFormatConverter">
+				<param value="float" id="numberType"/>
+				<param value="2" id="decimalPlaces"/>
+			</Converter>
+			<Validator implClass="com.ibm.btt.base.types.impl.NumberValidator">
+				<param value="float" id="numberType"/>
+			</Validator>
+		</Descriptor>
+	</type>
+
+	<type id="Double" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.NumberConverter">
+				<param value="double" id="numberType"/>
+				<param value="3" id="decimalPlaces"/>
+			</Converter>
+			<Converter convTypes="html" implClass="com.ibm.btt.base.types.impl.NumberFormatConverter">
+				<param value="double" id="numberType"/>
+				<param value="3" id="decimalPlaces"/>
+			</Converter>
+			<Validator implClass="com.ibm.btt.base.types.impl.NumberValidator">
+				<param value="double" id="numberType"/>
+			</Validator>
+		</Descriptor>
+	</type>
+
+	<type id="BigInteger" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.NumberConverter">
+				<param value="bigInteger" id="numberType"/>
+			</Converter>
+			<Converter convTypes="html" implClass="com.ibm.btt.base.types.impl.NumberFormatConverter">
+				<param value="bigInteger" id="numberType"/>
+			</Converter>
+			<Validator implClass="com.ibm.btt.base.types.impl.NumberValidator">
+				<param value="BigInteger" id="numberType"/>
+				<param value="9999999999999" id="maximumNumber"/>
+				<param value="-9999999999999" id="minimumNumber"/>
+			</Validator>
+		</Descriptor>
+	</type>
+
+	<type id="BigDecimal" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault" implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default" implClass="com.ibm.btt.base.types.impl.NumberConverter">
+				<param value="bigDecimal" id="numberType"/>
+				<param value="3" id="decimalPlaces"/>
+			</Converter>
+			<Converter convTypes="html" implClass="com.ibm.btt.base.types.impl.NumberFormatConverter">
+				<param value="bigDecimal" id="numberType"/>
+				<param value="3" id="decimalPlaces"/>
+			</Converter>
+			<Validator implClass="com.ibm.btt.base.types.impl.NumberValidator">
+				<param value="bigDecimal" id="numberType"/>
+			</Validator>
+		</Descriptor>
+	</type>
+
+</type.xml>

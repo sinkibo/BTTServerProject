@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AccountStatementFlow>
+
+
+	<htmlProcessor context="AccountStatementCtx" id="AccountStatementFlow">
+		<htmlState id="initial" type="initial">
+			<transitions>
+				<htmlTransition do_nothing="false" id="initial.start" outputMapFmt="initial.start_OutputFmt" targetState="AccountState"/>
+			</transitions>
+		</htmlState>
+
+		<openAPIState id="AccountState" input="selectCardId" output="account_id,cardList,card_amount,total_balance" type="client">
+			<transitions>
+				<htmlTransition do_nothing="false" id="AccountState.detail" targetState="AccountDetailOp"/>
+				<htmlTransition do_nothing="false" id="AccountState.exit" targetState="OK"/>
+			</transitions>
+		</openAPIState>
+
+		<openAPIState id="AccountDetail" output="account_id,cardList,card_amount,total_balance,selectCardId" type="client">
+			<transitions>
+				<htmlTransition do_nothing="false" id="AccountDetail.account" targetState="AccountState"/>
+				<htmlTransition do_nothing="false" id="AccountDetail.exit" targetState="OK"/>
+			</transitions>
+		</openAPIState>
+
+		<openAPIState typeIdInfo="OK" id="OK" output="*" type="final"/>
+
+		<operationState typeIdInfo="AccountDetailOp" id="AccountDetailOp" type="operation">
+			<transitions>
+				<htmlTransition do_nothing="false" id="AccountDetailOp.next" targetState="AccountDetail"/>
+			</transitions>
+		</operationState>
+	</htmlProcessor>
+
+	<operation id="AccountDetailOp" context="AccountDetailCtx" implClass="com.ibm.btt.application.op.AccountDetailOp"/>
+
+	<context id="AccountStatementCtx" type="op" parent="sessionCtx">
+		<refKColl refId="AccountStatementRecord"/>
+	</context>
+
+	<context id="AccountDetailCtx" type="op">
+		<refKColl refId="AccountDetailRecord"/>
+	</context>
+
+	<kColl id="AccountStatementRecord" dynamic="true">
+		<data id="account_id" refType="String"/>
+		<data id="password" value="123456" refType="String"/>
+		<data id="message" refType="String"/>
+		<iColl id="cardList">
+			<kColl id="card">
+				<data id="card_id" refType="Number"/>
+				<data id="card_type" refType="String"/>
+				<data id="balance" refType="Currency">
+					<param value="USD" id="currency"/>
+				</data>
+				<iColl id="historyList">
+					<kColl id="history">
+						<data id="date" refType="Date"/>
+						<data id="name" refType="String"/>
+						<data id="amount" refType="Currency"/>
+					</kColl>
+				</iColl>
+			</kColl>
+		</iColl>
+		<iColl id="payeeList">
+			<kColl id="payee">
+				<data id="name" refType="String"/>
+				<data id="phone" refType="String"/>
+				<data id="card_id" refType="Number"/>
+			</kColl>
+		</iColl>
+		<data id="card_amount" refType="Integer"/>
+		<data id="total_balance" refType="Currency"/>
+		<data id="selectCardId" refType="Number"/>
+		<kColl id="transferForm">
+			<data id="fromCardId" refType="Number"/>
+			<data id="toCardId" refType="Number"/>
+			<data id="amount" refType="Currency">
+				<param value="USD" id="currency"/>
+			</data>
+		</kColl>
+		<kColl id="payeeForm">
+			<data id="command" refType="String"/>
+			<kColl id="payee">
+				<data id="name" refType="String"/>
+				<data id="phone" refType="String"/>
+				<data id="card_id" refType="Number"/>
+			</kColl>
+		</kColl>
+	</kColl>
+
+	<kColl id="AccountDetailRecord">
+	</kColl>
+
+	<fmtDef id="initial.start_OutputFmt">
+		<mapperConverterExpression>
+			<map from="MockData.account_id" convType="" to="account_id"/>
+			<map from="MockData.cardList" convType="" to="cardList" append="false"/>
+			<map from="MockData.card_amount" convType="" to="card_amount"/>
+			<map from="MockData.total_balance" convType="" to="total_balance"/>
+		</mapperConverterExpression>
+	</fmtDef>
+
+</AccountStatementFlow>

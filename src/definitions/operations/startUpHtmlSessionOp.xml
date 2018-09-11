@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<startUpHtmlSessionOp>
+
+	<operation id="startUpHtmlSessionOp" context="startOpCtx" implClass="com.ibm.btt.application.op.StartUpOp"/>
+
+	<context id="startOpCtx" type="op">
+		<refKColl refId="startUpKColl"/>
+	</context>
+
+	<kColl id="startUpKColl" dynamic="false">
+		<field id="welcomeField" value="Welcome To BTT"/>
+	</kColl>
+
+</startUpHtmlSessionOp>
